@@ -1,0 +1,132 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ピラミッド</title>
+  <link rel="icon" href="https://edge-server.224.works/pyramid/logo.svg">
+  <link rel="apple-touch-icon" href="https://edge-server.224.works/pyramid/apple-touch-icon-152.png">
+  <!-- OGP -->
+  <meta property="og:type" content="website">
+  <meta property="og:description" content="関数型ビジュアルプログラミング言語、ピラミッドの紹介サイト">
+  <meta property="og:title" content="ピラミッド">
+  <meta property="og:url" content="https://pyramid.224.works/">
+  <meta property="og:image" content="https://edge-server.224.works/azaleaworks-card.jpg">
+  <meta property="og:site_name" content="ピラミッド">
+  <meta property="og:locale" content="ja_JP">
+  <!-- /OGP -->
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta property="twitter:description" content="関数型ビジュアルプログラミング言語、ピラミッドの紹介サイト">
+  <meta property="twitter:title" content="ピラミッド">
+  <meta property="twitter:url" content="https://pyramid.224.works/">
+  <meta name="twitter:image" content="https://edge-server.224.works/azaleaworks-card.jpg">
+  <meta name="twitter:domain" content="224.works">
+  <!-- /Twitter Card -->
+  <!-- CSS のちのち軽量化のためインストール版に変更 -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!--
+  Copyright (c) Tailwind Labs, Inc.
+  Released under the MIT license
+  https://github.com/tailwindlabs/tailwindcss/blob/master/LICENSE
+  -->
+  <!-- /CSS -->
+</head>
+<header class="sticky top-0 z-50 bg-white shadow-sm">
+  <dev class="container max-w-screen-lg mx-auto py-1 flex flex-wrap items-center">
+    <a href="https://224.works/">
+      <!--校内発表時には会社ロゴ削除-->
+      <img class="h-14 mr-2 hover:opacity-80" src="https://edge-server.224.works/logo.png"
+        alt="Azalea Works logo">
+      </img>
+    </a>
+
+    <a class="ml-1 leading-tight text-slate-700 hover:text-slate-500"" href=" https://github.com/tsumiki-works/">Tsumiki
+      Works<br>(GitHub)</a>
+    <nav class="md:ml-auto flex flex-wrap items-center hidden md:inline-block">
+      <!--ヘッダーボタンはスマホでは非表示-->
+      <a class="mr-4" href="playground/">
+        <button
+          class="inline-flex items-center bg-sky-600 py-1 px-2 text-white hover:bg-sky-500 rounded mt-4 md:mt-0">プレイグラウンド
+          <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 384 512" class="h-9 pl-2 pr-1 pt-2 pb-2">
+            <!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+            <path
+              d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z" />
+          </svg>
+        </button>
+      </a>
+      <a class="mr-4" href="tutorial/">
+        <button
+          class="inline-flex items-center bg-emerald-600 py-1 px-2 text-white hover:bg-emerald-500 rounded mt-4 md:mt-0">チュートリアル
+          <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 640 512" class="h-9 pl-2 pr-1 pt-2 pb-2">
+            <!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+            <path
+              d="M160 64c0-35.3 28.7-64 64-64H576c35.3 0 64 28.7 64 64V352c0 35.3-28.7 64-64 64H336.8c-11.8-25.5-29.9-47.5-52.4-64H384V320c0-17.7 14.3-32 32-32h64c17.7 0 32 14.3 32 32v32h64V64L224 64v49.1C205.2 102.2 183.3 96 160 96V64zm0 256c-53 0-96-43-96-96s43-96 96-96s96 43 96 96s-43 96-96 96zm-26.7 32h53.3C260.3 352 320 411.7 320 485.3c0 14.7-11.9 26.7-26.7 26.7H26.7C11.9 512 0 500.1 0 485.3C0 411.7 59.7 352 133.3 352z" />
+          </svg>
+        </button>
+      </a>
+      <a class="mr-2 text-slate-700 hover:text-slate-500" href="doc/">ドキュメント</a>
+    </nav>
+  </dev>
+</header>
+
+<body>
+  <div class="container mx-auto max-w-screen-lg">
+    <div class="w-full relative mt-1">
+      <img class="w-full" src="https://edge-server.224.works/pyramid/pyramid_front_view.jpg" alt="Pyramid by Tsumiki Works">
+      <div class="absolute inset-x-0 top-4 right-2 text-right hidden md:inline-block">
+        <!--スマホでは非表示-->
+        <a class="text-slate-400 hover:text-slate-300" href="">Pyramid～関数型ビジュアルプログラミング言語～
+        </a>
+      </div>
+      <p
+        class="text-2xl sm:text-3xl leading-snug lg:text-4xl mx-1 my-3 font-bold text-center bg-clip-text text-transparent bg-gradient-to-r from-amber-500	to-rose-400">
+        ブロックを組み合わせて、<br>
+        関数型プログラミングをはじめよう！
+      </p>
+      <div class="flex flex-wrap">
+        <dev class="w-full md:w-1/2 lg:w-1/3">
+          <section class="border-sky-200 bg-sky-100 rounded border-b-2 shadow m-2 hover:opacity-75">
+            <a href="playground/">
+              <h2 class="text-2xl sm:text-3xl text-slate-800 pl-4 pt-4">プレイグラウンドへ</h2>
+              <p class="text-slate-500 pt-2 pl-4 pb-4">自由にブロックを組み合わせよう。
+              </p>
+            </a>
+          </section>
+        </dev>
+        <dev class="w-full md:w-1/2 lg:w-1/3">
+          <section class="border-emerald-200 bg-emerald-100 rounded border-b-2 shadow m-2 hover:opacity-75">
+            <a href="tutorial/">
+              <h2 class="text-2xl sm:text-3xl text-slate-800 pl-4 pt-4">チュートリアルへ</h2>
+              <p class="text-slate-500 pt-2 pl-4 pb-4">問題を解きながらプログラミングを楽しもう。
+              </p>
+            </a>
+          </section>
+        </dev>
+        <dev class="w-full md:w-1/2 lg:w-1/3">
+          <section class="border-gray-200 bg-gray-100 rounded border-b-2 shadow m-2 hover:opacity-75">
+            <a href="doc/">
+              <h2 class="text-2xl sm:text-3xl text-gray-800 pl-4 pt-4">ドキュメントへ</h2>
+              <p class="text-gray-500 pt-2 pl-4 pb-4">関数の仕様を知る。
+              </p>
+            </a>
+          </section>
+        </dev>
+      </div>
+      <h2 class="text-2xl sm:text-3xl text-slate-800 mx-2 mt-4 mb-2">機能紹介</h2>
+      <p class="text-lg sm:text-2xl text-center leading-snug text-slate-700 mt-4 mb-2">
+        ピラミッドは、<font color="steelblue"><b>プログラミング教育</b></font>を目的とした<br>
+        <font color="steelblue"><b>関数型パラダイム</b></font>を支援する<br>
+        <font color="steelblue"><b>ビジュアルプログラミング言語</b></font>である。<br>
+      </p>
+      <p class="text-slate-700 mx-2 mt-4 mb-2">当サイトでは、ピラミッドの実行環境を提供。ブラウザからアクセスするだけで、ブロックプログラミングをお楽しみいただけます。</p>
+      </p>
+    </div>
+  </div>
+</body>
+<footer class="container max-w-screen-lg mx-auto p-2 text-slate-600">
+  © 2022 アゼリアワークス合同会社, TsumikiWorks
+</footer>
+
+</html>
