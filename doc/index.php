@@ -12,7 +12,7 @@
   <meta property="og:description" content="関数型ビジュアルプログラミング言語、ピラミッドのドキュメントページ。関数の仕様を知ろう。">
   <meta property="og:title" content="ドキュメント | ピラミッド">
   <meta property="og:url" content="https://pyramid.224.works/tutorial">
-  <meta property="og:image" content="https://edge-server.224.works/azaleaworks-card.jpg">
+  <meta property="og:image" content="https://edge-server.224.works/pyramid/pyramid_twitter_card.png">
   <meta property="og:site_name" content="ドキュメント | ピラミッド">
   <meta property="og:locale" content="ja_JP">
   <!-- /OGP -->
@@ -21,7 +21,7 @@
   <meta property="twitter:description" content="関数型ビジュアルプログラミング言語、ピラミッドのドキュメントページ。関数の仕様を知ろう。">
   <meta property="twitter:title" content="ドキュメント | ピラミッド">
   <meta property="twitter:url" content="https://pyramid.224.works/tutorial">
-  <meta name="twitter:image" content="https://edge-server.224.works/pyramid/azaleaworks-card.jpg">
+  <meta name="twitter:image" content="https://edge-server.224.works/pyramid/pyramid_twitter_card.png">
   <meta name="twitter:domain" content="224.works">
   <!-- /Twitter Card -->
   <!-- CSS のちのち軽量化のためインストール版に変更 -->
