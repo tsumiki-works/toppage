@@ -33,20 +33,20 @@
   -->
   <!-- /CSS -->
 </head>
-<header class="sticky top-0 z-50 bg-white shadow-sm">
+<header class="sticky top-0 z-50 bg-white shadow">
   <dev class="container max-w-screen-lg mx-auto py-1 flex flex-wrap items-center">
     <a href="https://224.works/">
       <!--校内発表時には会社ロゴ削除-->
-      <img class="h-14 mr-2 hover:opacity-80" src="https://edge-server.224.works/logo.png"
+      <img class="h-14 ml-1 hover:opacity-80" src="https://edge-server.224.works/logo.png"
         alt="Azalea Works logo">
       </img>
     </a>
 
-    <a class="ml-1 leading-tight text-slate-700 hover:text-slate-500"" href=" https://github.com/tsumiki-works/">Tsumiki
+    <a class="ml-2 leading-tight text-slate-700 hover:text-slate-500"" href="https://github.com/tsumiki-works/">Tsumiki
       Works<br>(GitHub)</a>
     <nav class="md:ml-auto flex flex-wrap items-center hidden md:inline-block">
       <!--ヘッダーボタンはスマホでは非表示-->
-      <a class="mr-4" href="playground/">
+      <a class="mr-3" href="playground/">
         <button
           class="inline-flex items-center bg-sky-600 py-1 px-2 text-white hover:bg-sky-500 rounded mt-4 md:mt-0">プレイグラウンド
           <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 384 512" class="h-9 pl-2 pr-1 pt-2 pb-2">
@@ -56,7 +56,7 @@
           </svg>
         </button>
       </a>
-      <a class="mr-4" href="tutorial/">
+      <a class="mr-3" href="tutorial/">
         <button
           class="inline-flex items-center bg-emerald-600 py-1 px-2 text-white hover:bg-emerald-500 rounded mt-4 md:mt-0">チュートリアル
           <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 640 512" class="h-9 pl-2 pr-1 pt-2 pb-2">
@@ -66,7 +66,7 @@
           </svg>
         </button>
       </a>
-      <a class="mr-2 text-slate-700 hover:text-slate-500" href="doc/">ドキュメント</a>
+      <a class="mr-3 text-slate-700 hover:text-slate-500" href="doc/">ドキュメント</a>
     </nav>
   </dev>
 </header>
@@ -81,11 +81,15 @@
         </a>
       </div>
       <p
-        class="text-2xl sm:text-3xl leading-snug lg:text-4xl mx-1 my-3 font-bold text-center bg-clip-text text-transparent bg-gradient-to-r from-amber-500	to-rose-400">
+        class="text-2xl sm:text-3xl leading-snug lg:text-4xl mx-2 my-3 font-bold text-center bg-clip-text text-transparent bg-gradient-to-r from-amber-500	to-rose-400">
         ブロックを組み合わせて、<br>
         関数型プログラミングをはじめよう！
       </p>
-      <div class="flex flex-wrap">
+      <div class="m-3 text-slate-700 sm:hidden"><!--for smartphone -->
+        <p>ブロックプログラミング機能は、スマートフォンからはご利用いただけません。</p>
+        <p>プレイグラウンドやチュートリアルをご利用の場合、<b>パソコンからのアクセス</b>をお願いします。タブレット対応は現在検討中です。</p>
+      </div>
+      <div class="flex flex-wrap mx-1">
         <dev class="w-full md:w-1/2 lg:w-1/3">
           <section class="border-sky-200 bg-sky-100 rounded border-b-2 shadow m-2 hover:opacity-75">
             <a href="playground/">
@@ -114,13 +118,13 @@
           </section>
         </dev>
       </div>
-      <h2 class="text-2xl sm:text-3xl text-slate-800 mx-2 mt-4 mb-2">機能紹介</h2>
-      <p class="text-lg sm:text-2xl text-center leading-snug text-slate-700 mt-4 mb-2">
+      <h2 class="text-2xl sm:text-3xl text-slate-800 mx-3 my-6">機能紹介</h2>
+      <p class="text-lg sm:text-2xl text-center leading-snug text-slate-700 mx-3 my-4">
         ピラミッドは、<font color="steelblue"><b>プログラミング教育</b></font>を目的とした<br>
         <font color="steelblue"><b>関数型パラダイム</b></font>を支援する<br>
         <font color="steelblue"><b>ビジュアルプログラミング言語</b></font>である。<br>
       </p>
-      <p class="text-slate-700 mx-2 mt-4 mb-2">当サイトでは、ピラミッドの実行環境を提供。ブラウザからアクセスするだけで、ブロックプログラミングをお楽しみいただけます。</p>
+      <p class="text-slate-700 mx-3 mt-4 mb-2">当サイトでは、ピラミッドの実行環境を提供。ブラウザからアクセスするだけで、関数型ブロックプログラミングをお楽しみいただけます。</p>
       </p>
     </div>
   </div>
