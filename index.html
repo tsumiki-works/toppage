@@ -5,7 +5,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ピラミッド</title>
-  <link rel="icon" href="https://edge-server.224.works/pyramid/favicon.ico">
+  <link rel="icon" type="image/png" href="https://edge-server.224.works/pyramid/favicon16.png" sizes="16x16">
+  <link rel="icon" type="image/png" href="https://edge-server.224.works/pyramid/favicon32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="https://edge-server.224.works/pyramid/favicon48.png" sizes="48x48">
+  <link rel="icon" type="image/png" href="https://edge-server.224.works/pyramid/favicon64.png" sizes="64x64">
   <link rel="apple-touch-icon" href="https://edge-server.224.works/pyramid/apple-touch-icon-152.png">
   <!-- OGP -->
   <meta property="og:type" content="website">
@@ -24,25 +27,22 @@
   <meta name="twitter:image" content="https://edge-server.224.works/pyramid/pyramid_twitter_card.png">
   <meta name="twitter:domain" content="224.works">
   <!-- /Twitter Card -->
-  <!-- CSS のちのち軽量化のためインストール版に変更 -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <!--
+  <!-- CSS
   Copyright (c) Tailwind Labs, Inc.
   Released under the MIT license
-  https://github.com/tailwindlabs/tailwindcss/blob/master/LICENSE
-  -->
+  https://github.com/tailwindlabs/tailwindcss/blob/master/LICENSE -->
+  <link rel="stylesheet" href="https://edge-server.224.works/pyramid/design.css">
   <!-- /CSS -->
 </head>
 <header class="sticky top-0 z-50 bg-white shadow">
   <dev class="container max-w-screen-lg mx-auto py-1 flex flex-wrap items-center">
     <a href="https://224.works/">
       <!--校内発表時には会社ロゴ削除-->
-      <img class="h-14 ml-1 hover:opacity-80" src="https://edge-server.224.works/logo.png"
-        alt="Azalea Works logo">
+      <img class="h-14 ml-1 hover:opacity-80" src="https://edge-server.224.works/logo.png" alt="Azalea Works logo">
       </img>
     </a>
 
-    <a class="ml-2 leading-tight text-slate-700 hover:text-slate-500"" href="https://github.com/tsumiki-works/">Tsumiki
+    <a class="ml-2 leading-tight text-slate-700 hover:text-slate-500" href="https://github.com/tsumiki-works/">Tsumiki
       Works<br>(GitHub)</a>
     <nav class="md:ml-auto flex flex-wrap items-center hidden md:inline-block">
       <!--ヘッダーボタンはスマホでは非表示-->
@@ -66,7 +66,7 @@
           </svg>
         </button>
       </a>
-      <a class="mr-3 text-slate-700 hover:text-slate-500" href="doc/">ドキュメント</a>
+      <a class="mr-3 text-slate-700 hover:text-slate-500 hidden lg:inline-block" href="doc/">ドキュメント</a>
     </nav>
   </dev>
 </header>
@@ -74,7 +74,10 @@
 <body>
   <div class="container mx-auto max-w-screen-lg">
     <div class="w-full relative mt-1">
-      <img class="w-full" src="https://edge-server.224.works/pyramid/pyramid_front_view.jpg" alt="Pyramid by Tsumiki Works">
+      <picture class="w-full">
+        <source srcset="https://edge-server.224.works/pyramid/pyramid_front_view_sm.jpg" media="(max-width: 639px)">
+        <img src="https://edge-server.224.works/pyramid/pyramid_front_view.jpg" alt="Pyramid by Tsumiki Works">
+      </picture>
       <div class="absolute inset-x-0 top-4 right-2 text-right hidden md:inline-block">
         <!--スマホでは非表示-->
         <a class="text-slate-400 hover:text-slate-300" href="">Pyramid～関数型ビジュアルプログラミング言語～
@@ -86,8 +89,8 @@
         関数型プログラミングをはじめよう！
       </p>
       <div class="m-3 text-slate-700 sm:hidden"><!--for smartphone -->
-        <p>ブロックプログラミング機能は、スマートフォンからはご利用いただけません。</p>
-        <p>プレイグラウンドやチュートリアルをご利用の場合、<b>パソコンからのアクセス</b>をお願いします。タブレット対応は現在検討中です。</p>
+        <p class="mt-2">ブロックプログラミング機能は、スマートフォンからはご利用いただけません。</p>
+        <p class="mt-2">プレイグラウンドやチュートリアルをご利用の場合、<b>パソコンからのアクセス</b>をお願いします。タブレット対応は現在検討中です。</p>
       </div>
       <div class="flex flex-wrap mx-1">
         <dev class="w-full md:w-1/2 lg:w-1/3">
@@ -129,8 +132,12 @@
     </div>
   </div>
 </body>
-<footer class="container max-w-screen-lg mx-auto p-2 text-slate-600">
+<footer class="bg-gray-100 px-2 py-1 mt-1 text-slate-600">
+  <div class="container max-w-screen-lg mx-auto flex">
   © 2022 アゼリアワークス合同会社, TsumikiWorks
+  <a href="license/" class="mx-auto mr-3 hover:text-slate-500">ライセンス</a>
+  </a>
+</div>
 </footer>
 
 </html>
