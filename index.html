@@ -132,33 +132,53 @@
       <p class="text-slate-700 mt-4">当サイトでは、ピラミッドの実行環境を提供。ブラウザからアクセスするだけで、関数型ブロックプログラミングをお楽しみいただけます。</p>
       </p>
       <h2 class="text-2xl sm:text-3xl text-blue-500 font-bold mt-10">■ できること</h2>
-      <h3 class="text-lg sm:text-2xl text-slate-800 mt-4">プレイグラウンド</h2>
-        <p class="text-slate-700 my-2">プレイグラウンドでは、ピラミッドの機能をフルに使い多彩なプログラミングを楽しめます。</p>
-        <ul class="list-inside list-disc">
-          <li class="text-slate-700 my-2">ドラッグ＆ドロップでブロックを生成</li>
-          <li class="text-slate-700 my-2">薄く色がついているところに置くと接触判定</li>
-          <li class="text-slate-700 my-2">評価を押すと、結果が画面右下に出力される</li>
-        </ul>
-        <h4 class="text-slate-800 text-lg mt-4">ブロックの持つ機能</h4>
-        <p class="text-slate-700 my-2">
-          ・四則演算 ・論理演算 ・数字の比較 ・文字列の比較 ・指数・対数 ・三角関数
-        </p>
-        <p class="text-slate-700 my-2">
-          ・リスト操作 ・if文 ・関数定義 ・変数定義
-        </p>
-        <p class="text-orange-600 font-bold my-2">
-          開閉機能により、傘下のブロックを折りたたむこともできる！
-        </p>
-        <img src="images/block_folding.svg" width="480px">
-        <h3 class="text-lg sm:text-2xl text-slate-800 mt-4">チュートリアル</h3>
-        <p class="text-slate-700 my-2">
-          チュートリアルでは、問題に沿って様々な計算を体験できます。左にある条件を満たしていくたびにチェックマークがつくので、チュートリアルを通してピラミッドでのブロックの扱いを学べます。</p>
-        <h3 class="text-lg sm:text-2xl text-slate-800 mt-4">ドキュメント</h3>
-        <p class="text-slate-700 my-2">準備中</p>
+      <h3 class="text-lg sm:text-2xl text-slate-800 mt-4">プレイグラウンド</h3>
+      <p class="text-slate-700 my-2">プレイグラウンドでは、ピラミッドの機能をフルに使い多彩なプログラミングを楽しめます。</p>
+      <ul class="list-inside list-disc">
+        <li class="text-slate-700 my-2">ドラッグ＆ドロップでブロックを生成</li>
+        <li class="text-slate-700 my-2">薄く色がついているところに置くと接触判定</li>
+        <li class="text-slate-700 my-2">評価を押すと、結果が画面右下に出力される</li>
+      </ul>
+      <h4 class="text-slate-800 text-lg mt-4">ブロックの持つ機能</h4>
+      <p class="text-slate-700 my-2">
+        ・四則演算 ・論理演算 ・数字の比較 ・文字列の比較 ・指数・対数 ・三角関数
+      </p>
+      <p class="text-slate-700 my-2">
+        ・リスト操作 ・if文 ・関数定義 ・変数定義
+      </p>
+      <p class="text-orange-600 font-bold my-2">
+        開閉機能により、傘下のブロックを折りたたむこともできる！
+      </p>
+      <img src="images/block_folding.svg" width="640px">
+      <h3 class="text-lg sm:text-2xl text-slate-800 mt-4">チュートリアル</h3>
+      <p class="text-slate-700 my-2">
+        チュートリアルでは、問題に沿って様々な計算を体験できます。左にある条件を満たしていくたびにチェックマークがつくので、チュートリアルを通してピラミッドでのブロックの扱いを学べます。</p>
+      <h3 class="text-lg sm:text-2xl text-slate-800 mt-4">ドキュメント</h3>
+      <p class="text-slate-700 my-2">準備中</p>
+      <h2 class="text-2xl sm:text-3xl text-blue-500 font-bold mt-10">■ 学べること</h2>
+      <h3 class="text-lg sm:text-2xl text-slate-800 mt-4">計算の順序</h3>
+      <p class="text-slate-700 my-2">ブロックでは下のまとまりから上のまとまりへと計算が行われるため、<b>(1+2)*3</b> と <b>1*(2+3)</b>の違いが明確になります。
+      <img src="images/keisan_junjo.svg" width="640px">
+      <h3 class="text-lg sm:text-2xl text-slate-800 mt-4">再帰関数</h3>
+      <p class="text-slate-700 my-2">nの階乗を求めるブロックを並べたり、リストの反転をしたりできます。（画像は準備中）</p>
+      <p class="text-slate-700 my-2">などなど…</p>
+      <h3 class="text-lg sm:text-2xl text-slate-800 mt-4">ピラミッドで関数型プログラミングを学ぶことの利点</h3>
+      <ul class="list-inside list-disc">
+        <li class="text-slate-700 my-2">リアルタイムでの型推論により、一目で関数の型(i32, f32, string, boolなど)を確認できる</li>
+        <li class="text-slate-700 my-2">Webアプリのため、インストール要らずで、すぐにプログラミングを始められる</li>
+        <li class="text-slate-700 my-2">式の一部でも評価できるため、どこで間違えているか確認しやすい</li>
+        <li class="text-slate-700 my-2">無効なブロックは赤い文字になるため、構造の問題を確認しやすい</li>
+      </ul>
+      <h2 class="text-xl sm:text-2xl text-blue-500 font-bold mt-10">■ 動作環境</h2>
+      <p class="text-slate-700 my-2">パソコンのWebブラウザで動作させることが可能です。ただし、Internet Explorerやタブレットの縦向き画面などでは表示が乱れる場合がございます。</p>
+      <p class="text-slate-700 my-2">また、タッチ操作には現在対応していません。恐れ入りますが、マウスカーソルやキーボードを使った入力のできるパソコンからお楽しみください。
+      </p>
+      <h2 class="text-xl sm:text-2xl text-blue-500 font-bold mt-10">■ ご意見ご感想はこちら</h2>
+      <p class="text-slate-700 my-2">バグ報告などは、ピラミッド制作チーム <a href="mailto:tsumiki@224.works" class="text-orange-600">tsumiki@224.works</a> へお寄せください。学業との兼ね合いもあり全て解決できるとは限りませんが、目を通させていただきます。また、現在未完成の機能もあり、そちらが終わってからの作業となります。</p>
     </section>
   </div>
 </body>
-<footer class="bg-gray-100 px-2 py-1 mt-1 text-slate-600">
+<footer class="bg-gray-100 px-2 py-1 mt-10 text-slate-600">
   <div class="container max-w-screen-lg mx-auto flex">
     © 2022 アゼリアワークス合同会社, TsumikiWorks
     <a href="license/" class="mx-auto mr-3 hover:text-slate-500">ライセンス</a>
