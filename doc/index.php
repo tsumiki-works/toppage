@@ -106,7 +106,7 @@
 	    <?php include('pageloader.php'); ?>
       </section>
     </dev>
-    <dev class="md:hidden text-slate-800">
+    <dev class="sm:hidden text-slate-800">
       <a class="mx-1" href="">
         <h1 class="inline-flex items-center rounded bg-slate-100 m-2 py-2 px-2 text-slate-800 hover:opacity-90 text-xl">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" fill="lightslategray"
