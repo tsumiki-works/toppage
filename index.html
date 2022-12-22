@@ -19,6 +19,7 @@
   <meta property="og:site_name" content="ピラミッド">
   <meta property="og:locale" content="ja_JP">
   <!-- /OGP -->
+  <link rel="stylesheet" href="topdesign.css">
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta property="twitter:description" content="関数型ビジュアルプログラミング言語、ピラミッドの紹介サイト">
@@ -27,14 +28,8 @@
   <meta name="twitter:image" content="https://edge-server.224.works/pyramid/pyramid_twitter_card.png">
   <meta name="twitter:domain" content="224.works">
   <!-- /Twitter Card -->
-  <!-- CSS
-  Copyright (c) Tailwind Labs, Inc.
-  Released under the MIT license
-  https://github.com/tailwindlabs/tailwindcss/blob/master/LICENSE -->
-  <link rel="stylesheet" href="https://edge-server.224.works/pyramid/design.css">
-  <!-- /CSS -->
 </head>
-<header class="sticky top-0 z-50 bg-white shadow">
+<header id="ui" class="sticky top-0 z-50 bg-white shadow">
   <dev class="container max-w-screen-lg mx-auto py-1 flex flex-wrap items-center">
     <a href="https://224.works/">
       <!--校内発表時には会社ロゴ削除-->
@@ -73,7 +68,7 @@
 
 <body>
   <div class="container mx-auto max-w-screen-lg">
-    <div class="w-full relative mt-1">
+    <div id="ui" class="w-full relative mt-1">
       <picture class="w-full">
         <source srcset="https://edge-server.224.works/pyramid/pyramid_front_view_sm.jpg" media="(max-width: 639px)">
         <img src="https://edge-server.224.works/pyramid/pyramid_front_view.jpg" alt="Pyramid by Tsumiki Works">
