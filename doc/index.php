@@ -32,6 +32,7 @@
   Released under the MIT license
   https://github.com/tailwindlabs/tailwindcss/blob/master/LICENSE -->
   <link rel="stylesheet" href="https://edge-server.224.works/pyramid/design.css">
+  <link rel="stylesheet" href="blockpreview.css">
   <!-- /CSS -->
 </head>
 <header class="container max-w-screen-lg mx-auto py-1 flex flex-wrap items-center">
@@ -46,7 +47,7 @@
   <main class="flex-grow">
     <dev class="flex">
       <aside class="w-56 hidden sm:inline-block ml-2 my-2 text-slate-800" aria-label="Sidebar">
-        <a class="mx-1" href="">
+        <a class="mx-1" href="https://pyramid.224.works/doc/">
           <h1
             class="inline-flex items-center rounded bg-slate-100 w-52 py-1 pl-2 text-slate-800 hover:opacity-90 text-2xl">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" fill="lightslategray"
@@ -58,9 +59,12 @@
             ドキュメント
           </h1>
         </a>
-        <a href="#" class="hover:text-slate-700">
+        <a href="?page=literal" class="hover:text-slate-700">
           <h2 class="pl-2 mx-2 mt-4 text-xl border-l-2 border-sky-100 hover:border-sky-400">
             型</h2>
+        </a>
+        <a href="?page=i32" class="hover:text-slate-700">
+          <h3 class="pl-2 mx-2 mt-3 text-lg border-l-2 border-sky-100 hover:border-sky-400 ml-6">i32</h3>
         </a>
         <a href="#" class="hover:text-slate-700">
           <h2 class="pl-2 mx-2 mt-4 text-xl border-l-2 border-sky-100 hover:border-sky-400">
@@ -118,9 +122,12 @@
           ドキュメントメニュー
         </h1>
       </a>
-      <a href="#" class="hover:text-slate-700">
+      <a href="?page=literal" class="hover:text-slate-700">
         <h2 class="pl-2 mx-2 mt-4 text-xl border-l-2 border-sky-100 hover:border-sky-400">
           型</h2>
+      </a>
+      <a href="?page=i32" class="hover:text-slate-700">
+        <h3 class="pl-2 mx-2 mt-3 text-lg border-l-2 border-sky-100 hover:border-sky-400 ml-6">i32</h3>
       </a>
       <a href="#" class="hover:text-slate-700">
         <h2 class="pl-2 mx-2 mt-4 text-xl border-l-2 border-sky-100 hover:border-sky-400">

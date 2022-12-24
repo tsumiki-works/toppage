@@ -1,0 +1,95 @@
+pyramid-empty-block {
+    background-color: rgba(15, 23, 42, 0.1);
+}
+pyramid-literal-block {
+    background-color: #5d8cd4;
+}
+pyramid-symbol-block,
+pyramid-add-block,
+pyramid-sub-block,
+pyramid-mul-block,
+pyramid-int-div-block,
+pyramid-float-div-block,
+pyramid-mod-block,
+pyramid-pow-block {
+    background-color: #40a5a8;
+}
+pyramid-define-block {
+    background-color: #f09ecb;
+    outline: white solid 2px;
+}
+pyramid-list-block {
+    background-color: #99a9c2;
+}
+pyramid-if-block {
+    background-color: #ea7f90;
+}
+pyramid-map-block,
+pyramid-push-block,
+pyramid-pop-block,
+pyramid-rest-block,
+pyramid-length-block {
+    background-color: #66bbaa;
+}
+
+.pyramid-block {
+    position: absolute;
+    color: rgba(0, 0, 0, 0.6);
+    width: auto;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    margin: 1rem;
+    transition-duration: 0.2s;
+    box-shadow: 0 0 22px 0 rgba(15, 23, 42, 0);
+}
+
+.pyramid-block:hover {
+    outline: solid 2px;
+    outline-color: #fcfefe;
+    transition-duration: 0.25s;
+    transform: scale(1.8, 1.8);
+    box-shadow: 0 0 22px 0 rgba(15, 23, 42, 0.2);
+}
+
+span.content {
+    color: white;
+    font-weight: bold;
+}
+
+.pyramid-invalid-block>div.content-wrapper>span.content {
+    color: #d20519;
+}
+
+.pyramid-invalid-block>span.type {
+    font-style: italic;
+}
+
+span.type {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 12px;
+    box-sizing: border-box;
+    order: -1;
+}
+
+span.pyramid-argument {
+    color: white;
+    margin-left: 16px;
+}
+
+.pyramid-menutab {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    color: white;
+    transition-duration: 0.2s;
+    box-shadow: 0 0 25px 0 rgba(15, 23, 42, 0);
+}
+.pyramid-menutab:hover {
+    outline: solid 2px;
+    outline-color: #fcfefe;
+    transition-duration: 0.25s;
+    transform: scale(1.8, 1.8);
+    box-shadow: 0 0 25px 0 rgba(15, 23, 42, 0.2);
+}

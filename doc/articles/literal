@@ -1,0 +1,4 @@
+<h2 class="text-lg my-3">literal</h2>
+<p>このボタンを押すとリテラルブロックがメニューで選べるようになる</p>
+
+<pyramid-menutab class="pyramid-menutab" style="width: 60px; height: 50px; background-color: rgb(93, 140, 212); border-radius: 50px;"><span>Literal</span></pyramid-menutab>
