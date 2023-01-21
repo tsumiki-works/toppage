@@ -31,7 +31,7 @@
   Copyright (c) Tailwind Labs, Inc.
   Released under the MIT license
   https://github.com/tailwindlabs/tailwindcss/blob/master/LICENSE -->
-  <link rel="stylesheet" href="https://edge-server.224.works/pyramid/design.css">
+  <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="blockpreview.css">
   <!-- /CSS -->
 </head>
@@ -45,8 +45,25 @@
 
 <body class="container max-w-screen-lg mx-auto flex flex-col min-h-screen">
   <main class="flex-grow">
-    <dev class="flex">
-      <aside class="w-56 hidden sm:inline-block ml-2 my-2 text-slate-800" aria-label="Sidebar">
+    <dev class="sm:flex">
+      <section class="m-4 leading-relaxed sm:order-2">
+        <h2>i32</h2>
+
+        <h3>一</h3>
+        
+        <p>
+        遠野郷は今の陸中上閉伊郡の西の半分、山々にて取り囲まれたる平地なり。新町村にては、遠野、土淵、附馬牛、松崎、青笹、上郷、小友、綾織、鱒沢、宮守、達曾部の一町十ヶ村に分かつ。近代或いは西閉伊郡とも称し、中古にはまた遠野保とも呼べり。今日郡役所のある遠野町はすなわち一郷の町場にして、南部家一万石の城下なり。城を横田城ともいう。この地へ行くには花巻の停車場にて汽車を下り、北上川を渡り、その川の支流猿ヶ石川の渓を伝いて、東の方へ入ること十三里、遠野の町に至る。山奥には珍しき繁華の地なり。伝えいう、遠野郷の地大昔はすべて一円の湖水なりしに、その水猿ヶ石川となりて人界に流れ出でしより、自然にかくのごとき邑落をなせしなりと。されば谷川のこの猿ヶ石に落合うもの甚だ多く、俗に七内八崎ありと称す。内は沢または谷のことにて、奥州の地名には多くあり。
+        </p>
+        
+        <h3>二</h3>
+        
+        <p>
+        遠野の町は南北の川の落合にあり。以前は七七十里とて、七つの渓谷おのおの七十里の奥より売買の貨物を聚め、その市の日は馬千匹、人千人の賑わしさなりき。四方の山々の中に最も秀でたるを早池峯という、北の方附馬牛の奥にあり。東の方には六角牛山立てり。石神という山は附馬牛と達曾部との間にありて、その高さ前の二つよりも劣れり。大昔に女神あり、三人の娘を伴ないてこの高原に来たり、今の来内村の伊豆権現の社あるところに宿りし夜、今夜よき夢を見たらん娘によき山を与うべしと母の神の語りて寝たりしに、夜深く天より霊華降りて姉の姫の胸の上に止りしを、末の姫眼覚めて窃にこれを取り、わが胸の上に載せたりしかば、ついに最も美しき早池峯の山を得、姉たちは六角牛と石神とを得たり。若き三人の女神おのおの三の山に住し今もこれを領したもう故に、遠野の女どもはその妬を畏れて今もこの山には遊ばずといえり。
+        </p>
+        <pyramid-menutab class="pyramid-menutab" style="width: 60px; height: 50px; background-color: rgb(93, 140, 212); border-radius: 50px;"><span>Literal</span></pyramid-menutab>
+        <pyramid-literal-block class="pyramid-block" style="min-width: 100px; min-height: 50px;"><div class="content-wrapper"><span class="content">0</span></div><span class="type">i32</span></pyramid-literal-block>
+      </section>
+      <aside class="w-56 ml-2 my-2 text-slate-800 order-1" aria-label="Sidebar">
         <a class="mx-1" href="https://pyramid.224.works/doc/">
           <h1
             class="inline-flex items-center rounded bg-slate-100 w-52 py-1 pl-2 text-slate-800 hover:opacity-90 text-2xl">
@@ -106,68 +123,6 @@
             組み込み関数</h2>
         </a>
       </aside>
-    <section class="w-fit m-4 leading-relaxed">
-	    <?php include('pageloader.php'); ?>
-      </section>
-    </dev>
-    <dev class="sm:hidden text-slate-800">
-      <a class="mx-1" href="">
-        <h1 class="inline-flex items-center rounded bg-slate-100 m-2 py-2 px-2 text-slate-800 hover:opacity-90 text-xl">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" fill="lightslategray"
-            class="h-7 my-2 ml-2 mr-3">
-            <!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
-            <path
-              d="M64 0C28.7 0 0 28.7 0 64V448c0 35.3 28.7 64 64 64H320c35.3 0 64-28.7 64-64V160H256c-17.7 0-32-14.3-32-32V0H64zM256 0V128H384L256 0zM80 64h64c8.8 0 16 7.2 16 16s-7.2 16-16 16H80c-8.8 0-16-7.2-16-16s7.2-16 16-16zm0 64h64c8.8 0 16 7.2 16 16s-7.2 16-16 16H80c-8.8 0-16-7.2-16-16s7.2-16 16-16zm16 96H288c17.7 0 32 14.3 32 32v64c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V256c0-17.7 14.3-32 32-32zm0 32v64H288V256H96zM240 416h64c8.8 0 16 7.2 16 16s-7.2 16-16 16H240c-8.8 0-16-7.2-16-16s7.2-16 16-16z" />
-          </svg>
-          ドキュメントメニュー
-        </h1>
-      </a>
-      <a href="?page=literal" class="hover:text-slate-700">
-        <h2 class="pl-2 mx-2 mt-4 text-xl border-l-2 border-sky-100 hover:border-sky-400">
-          型</h2>
-      </a>
-      <a href="?page=i32" class="hover:text-slate-700">
-        <h3 class="pl-2 mx-2 mt-3 text-lg border-l-2 border-sky-100 hover:border-sky-400 ml-6">i32</h3>
-      </a>
-      <a href="#" class="hover:text-slate-700">
-        <h2 class="pl-2 mx-2 mt-4 text-xl border-l-2 border-sky-100 hover:border-sky-400">
-          一項演算子</h2>
-      </a>
-      <a href="#" class="hover:text-slate-700">
-        <h3 class="pl-2 mx-2 mt-3 text-lg border-l-2 border-sky-100 hover:border-sky-400 ml-6">論理否定</h3>
-      </a>
-      <a href="#" class="hover:text-slate-700">
-        <h2 class="pl-2 mx-2 mt-4 text-xl border-l-2 border-sky-100 hover:border-sky-400">
-          二項演算子</h2>
-      </a>
-      <a href="#" class="hover:text-slate-700">
-        <h3 class="pl-2 mx-2 mt-3 text-lg border-l-2 border-sky-100 hover:border-sky-400 ml-6">加算</h3>
-      </a>
-      <a href="#" class="hover:text-slate-700">
-        <h3 class="pl-2 mx-2 mt-3 text-lg border-l-2 border-sky-100 hover:border-sky-400 ml-6">減算</h3>
-      </a>
-      <a href="#" class="hover:text-slate-700">
-        <h3 class="pl-2 mx-2 mt-3 text-lg border-l-2 border-sky-100 hover:border-sky-400 ml-6">乗算</h3>
-      </a>
-      <a href="#" class="hover:text-slate-700">
-        <h3 class="pl-2 mx-2 mt-3 text-lg border-l-2 border-sky-100 hover:border-sky-400 ml-6">除算（切り捨て）</h3>
-      </a>
-      <a href="#" class="hover:text-slate-700">
-        <h3 class="pl-2 mx-2 mt-3 text-lg border-l-2 border-sky-100 hover:border-sky-400 ml-6">あまり演算</h3>
-      </a>
-      <a href="#" class="hover:text-slate-700">
-        <h3 class="pl-2 mx-2 mt-3 text-lg border-l-2 border-sky-100 hover:border-sky-400 ml-6">累乗演算</h3>
-      </a>
-      <a href="#" class="hover:text-slate-700">
-        <h3 class="pl-2 mx-2 mt-3 text-lg border-l-2 border-sky-100 hover:border-sky-400 ml-6">論理積</h3>
-      </a>
-      <a href="#" class="hover:text-slate-700">
-        <h3 class="pl-2 mx-2 mt-3 text-lg border-l-2 border-sky-100 hover:border-sky-400 ml-6">論理和</h3>
-      </a>
-      <a href="#" class="hover:text-slate-700">
-        <h2 class="pl-2 mx-2 mt-4 text-xl border-l-2 border-sky-100 hover:border-sky-400">
-          組み込み関数</h2>
-      </a>
     </dev>
   </main>
 </body>
