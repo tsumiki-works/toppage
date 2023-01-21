@@ -34,6 +34,12 @@
   <link rel="stylesheet" href="https://edge-server.224.works/pyramid/design.css">
   <link rel="stylesheet" href="blockpreview.css">
   <!-- /CSS -->
+  <!-- MathJax -->
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script><!--←IE -->
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <!-- These scripts includes the work that is distributed in the Apache License 2.0.
+  https://github.com/mathjax/MathJax-src/blob/master/LICENSE -->
+  <!-- /MathJax -->
 </head>
 <header class="container max-w-screen-lg mx-auto py-1 flex flex-wrap items-center">
   <a href="../">
