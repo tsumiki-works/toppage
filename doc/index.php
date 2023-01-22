@@ -73,46 +73,27 @@
             型</h2>
         </a>
         <a href="?page=i32" class="hover:text-slate-700">
-          <h3 class="pl-2 mx-2 mt-3 text-lg border-l-2 border-sky-100 hover:border-sky-400 ml-6">i32</h3>
+          <h3 class="pl-2 mx-2 mt-3 text-lg border-l-2 border-sky-100 hover:border-sky-400 ml-6">i32(numに統合予定)</h3>
         </a>
-        <a href="#" class="hover:text-slate-700">
+        <a href="?page=calc" class="hover:text-slate-700">
           <h2 class="pl-2 mx-2 mt-4 text-xl border-l-2 border-sky-100 hover:border-sky-400">
-            一項演算子</h2>
+            演算</h2>
         </a>
-        <a href="#" class="hover:text-slate-700">
-          <h3 class="pl-2 mx-2 mt-3 text-lg border-l-2 border-sky-100 hover:border-sky-400 ml-6">論理否定</h3>
+        <a href="?page=arithmetic" class="hover:text-slate-700">
+          <h3 class="pl-2 mx-2 mt-3 text-lg border-l-2 border-sky-100 hover:border-sky-400 ml-6">算術演算子</h3>
         </a>
-        <a href="#" class="hover:text-slate-700">
-          <h2 class="pl-2 mx-2 mt-4 text-xl border-l-2 border-sky-100 hover:border-sky-400">
-            二項演算子</h2>
+        <a href="?page=logic" class="hover:text-slate-700">
+          <h3 class="pl-2 mx-2 mt-3 text-lg border-l-2 border-sky-100 hover:border-sky-400 ml-6">論理演算子</h3>
         </a>
-        <a href="#" class="hover:text-slate-700">
-          <h3 class="pl-2 mx-2 mt-3 text-lg border-l-2 border-sky-100 hover:border-sky-400 ml-6">加算</h3>
+        <a href="?page=comparison" class="hover:text-slate-700">
+          <h3 class="pl-2 mx-2 mt-3 text-lg border-l-2 border-sky-100 hover:border-sky-400 ml-6">比較演算子</h3>
         </a>
-        <a href="#" class="hover:text-slate-700">
-          <h3 class="pl-2 mx-2 mt-3 text-lg border-l-2 border-sky-100 hover:border-sky-400 ml-6">減算</h3>
-        </a>
-        <a href="#" class="hover:text-slate-700">
-          <h3 class="pl-2 mx-2 mt-3 text-lg border-l-2 border-sky-100 hover:border-sky-400 ml-6">乗算</h3>
-        </a>
-        <a href="#" class="hover:text-slate-700">
-          <h3 class="pl-2 mx-2 mt-3 text-lg border-l-2 border-sky-100 hover:border-sky-400 ml-6">除算（切り捨て）</h3>
-        </a>
-        <a href="#" class="hover:text-slate-700">
-          <h3 class="pl-2 mx-2 mt-3 text-lg border-l-2 border-sky-100 hover:border-sky-400 ml-6">あまり演算</h3>
-        </a>
-        <a href="#" class="hover:text-slate-700">
-          <h3 class="pl-2 mx-2 mt-3 text-lg border-l-2 border-sky-100 hover:border-sky-400 ml-6">累乗演算</h3>
-        </a>
-        <a href="#" class="hover:text-slate-700">
-          <h3 class="pl-2 mx-2 mt-3 text-lg border-l-2 border-sky-100 hover:border-sky-400 ml-6">論理積</h3>
-        </a>
-        <a href="#" class="hover:text-slate-700">
-          <h3 class="pl-2 mx-2 mt-3 text-lg border-l-2 border-sky-100 hover:border-sky-400 ml-6">論理和</h3>
-        </a>
-        <a href="#" class="hover:text-slate-700">
+        <a href="?page=func" class="hover:text-slate-700">
           <h2 class="pl-2 mx-2 mt-4 text-xl border-l-2 border-sky-100 hover:border-sky-400">
             組み込み関数</h2>
+        </a>
+        <a href="?page=iii" class="hover:text-slate-700">
+          <h3 class="pl-2 mx-2 mt-3 text-lg border-l-2 border-sky-100 hover:border-sky-400 ml-6">工事中</h3>
         </a>
       </aside>
     </dev>
