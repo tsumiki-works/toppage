@@ -1,7 +1,7 @@
 <?php
 if (!isset($_GET['page'])) {
     // ![TODO]
-    echo 'default page';
+    echo 'ピラミッドの演算やブロックの仕様について記載していきます。現現在備中。';
     return;
 }
 $path = './articles/' . $_GET['page'];
