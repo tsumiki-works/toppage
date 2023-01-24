@@ -38,6 +38,7 @@ pyramid-length-block {
     display: flex;
     flex-flow: column;
     align-items: center;
+    min-width: max-content;
 }
 
 .pyramid-block:hover {
@@ -74,6 +75,7 @@ span.pyramid-argument {
     justify-content: center;
     align-items: center;
     color: white;
+    min-width: max-content;
 }
 
 .pyramid-menutab:hover {
