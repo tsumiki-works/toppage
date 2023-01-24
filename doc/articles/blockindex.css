@@ -8,8 +8,6 @@ pyramid-symbol-block,
 pyramid-add-block,
 pyramid-sub-block,
 pyramid-mul-block,
-pyramid-int-div-block,
-pyramid-float-div-block,
 pyramid-mod-block,
 pyramid-pow-block {
     background-color: #40a5a8;
