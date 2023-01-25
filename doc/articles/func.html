@@ -1,0 +1,75 @@
+<h2 class="text-lg my-3">組み込み関数</h2>
+
+<!-- 内部仕様に関する記述には"attention!"のコメントを残しています。内部仕様が変わった場合は記述の修正をしてください。-->
+
+<p>
+    このページでは、Pyramidの組み込み関数すべてに関する説明をしています。
+</p>
+
+<h3>数学関数</h3>
+
+<p>
+    <a href="/doc/articles/type-and-block.html#number">Number型</a>
+    の変数numを受け取り、演算結果を
+    <a href="/doc/articles/type-and-block.html#number">Number型</a>
+    で返します。
+</p>
+
+<!-- attention! -->
+<p>
+    Pyramidの数学関数は、TypeScriptの演算子を内部的に呼び出しています。
+    その為、細かい演算子の挙動を確認したい場合は、
+    TypeScriptもとい
+    <a href="https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Operators">
+        JavaScriptのリファレンス
+    </a>
+    を参照するとよいでしょう。
+</p>
+
+<h4>exp(num)</h4>
+<p>自然対数を底とする指数関数です。eのnum乗を返します。</p>
+
+<h4>log(num)</h4>
+<p>自然対数を底とする対数関数です。numの自然対数を返します。</p>
+
+<h4>sqrt(num)</h4>
+<p>平方根関数です。numの平方根を返します。</p>
+
+<h4>sin(num)</h4>
+<p>正弦関数です。numのサインを返します。</p>
+
+<h4>cos(num)</h4>
+<p>余弦関数です。numのコサインを返します。</p>
+
+<h4>tan(num)</h4>
+<p>正接関数です。numのタンジェントを返します。</p>
+
+<h3>リスト操作関数</h3>
+
+<p>
+    <a href="/doc/articles/type-and-block.html#list">List型</a>
+    の変数lst&lt;gen&gt;を受け取り、演算結果を返します。
+    （genはジェネリクスを意味し、リスト型が任意の型を要素に持てることを意味します。）
+</p>
+
+<h4>length(lst&lt;gen&gt;)</h4>
+
+lstの持つ要素数を
+<a href="/doc/articles/type-and-block.html#number">Number型</a>
+で返します。
+
+<h4>map(func&lt;gen&rarr;gen&gt;, lst&lt;gen&gt;)</h4>
+
+<p>funcをlstの要素すべてに適用させたリストを返します。</p>
+
+<h4>push(gen, lst&lt;gen&gt;)</h4>
+
+<p>第一オペランドgenの値を、第二オペランドのリストlstの末尾に追加したリストを返します。</p>
+
+<h4>pop(lst&lt;gen&gt;)</h4>
+
+<p>lstの先頭要素を返します。</p>
+
+<h4>rest(lst&lt;gen&gt;)</h4>
+
+<p>lstの先頭要素を除いたリストを返します。</p>
