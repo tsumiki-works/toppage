@@ -1,4 +1,9 @@
-<h2 class="text-lg my-3">演算</h2>
+<head>
+    <link rel="stylesheet" href="https://edge-server.224.works/pyramid/design.css">
+    <link rel="stylesheet" href="../blockpreview.css">
+</head>
+<body>
+<h2 class="text-xl my-3">演算</h2>
 
 <!-- 内部仕様に関する記述には"attention!"のコメントを残しています。内部仕様が変わった場合は記述の修正をしてください。-->
 
@@ -23,10 +28,10 @@
     <a href="#!">Number型</a>
     のオペランドに対する演算を行います。
 </p>
-
 <h4>+</h4>
 <p>argment-num: 2</p>
 <p>加算演算子です。二つのオペランドの値を加算した結果を返します。</p>
+<pyramid-symbol-block class="pyramid-block" style="margin-left: 20px; margin-top: 10px; width: 100px; height: 50px;"><div class="content-wrapper"><span class="content">+</span></div><span class="type">num-&gt;num-&gt;num</span></pyramid-symbol-block>
 
 <h4>-</h4>
 <p>argment-num: 2</p>
@@ -108,3 +113,4 @@
 <h4>"==</h4>
 <p>argment-num: 2</p>
 <p>等価演算子です。二つのオペランドの文字列リテラルが等しければtrue、そうでなければfalseを返します。</p>
+</body>
