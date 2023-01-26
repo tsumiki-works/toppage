@@ -6,8 +6,14 @@
     このページでは、Pyramidの組み込み関数すべてに関する説明をしています。
 </p>
 
-
 <h3>数学関数</h3>
+
+<p>
+    <a href="/doc/articles/type-and-block.html#number">Number型</a>
+    の変数numを受け取り、演算結果を
+    <a href="/doc/articles/type-and-block.html#number">Number型</a>
+    で返します。
+</p>
 
 <!-- attention! -->
 <p>
@@ -24,28 +30,46 @@
 <p>自然対数を底とする指数関数です。eのnum乗を返します。</p>
 
 <h4>log(num)</h4>
-<p>自然対数を底とする指数関数です。eのnum乗を返します。</p>
+<p>自然対数を底とする対数関数です。numの自然対数を返します。</p>
 
 <h4>sqrt(num)</h4>
-<p>自然対数を底とする指数関数です。eのnum乗を返します。</p>
+<p>平方根関数です。numの平方根を返します。</p>
 
 <h4>sin(num)</h4>
-<p>自然対数を底とする指数関数です。eのnum乗を返します。</p>
+<p>正弦関数です。numのサインを返します。</p>
 
 <h4>cos(num)</h4>
-<p>余接関数です。numのコサインを返します。</p>
+<p>余弦関数です。numのコサインを返します。</p>
 
 <h4>tan(num)</h4>
-<p>余接関数です。numのコサインを返します。</p>
+<p>正接関数です。numのタンジェントを返します。</p>
 
 <h3>リスト操作関数</h3>
 
-<h4>length</h4>
+<p>
+    <a href="/doc/articles/type-and-block.html#list">List型</a>
+    の変数lst&lt;gen&gt;を受け取り、演算結果を返します。
+    （genはジェネリクスを意味し、リスト型が任意の型を要素に持てることを意味します。）
+</p>
 
-<h4>map</h4>
+<h4>length(lst&lt;gen&gt;)</h4>
 
-<h4>push</h4>
+lstの持つ要素数を
+<a href="/doc/articles/type-and-block.html#number">Number型</a>
+で返します。
 
-<h4>pop</h4>
+<h4>map(func&lt;gen&rarr;gen&gt;, lst&lt;gen&gt;)</h4>
 
-<h4>rest</h4>
+<p>funcをlstの要素すべてに適用させたリストを返します。</p>
+
+<h4>push(gen, lst&lt;gen&gt;)</h4>
+
+<p>第一オペランドgenの値を、第二オペランドのリストlstの末尾に追加したリストを返します。</p>
+
+<h4>pop(lst&lt;gen&gt;)</h4>
+
+<p>lstの先頭要素を返します。</p>
+
+<h4>rest(lst&lt;gen&gt;)</h4>
+
+<p>lstの先頭要素を除いたリストを返します。</p>
