@@ -41,21 +41,26 @@
   https://github.com/mathjax/MathJax-src/blob/master/LICENSE -->
   <!-- /MathJax -->
 </head>
-<header class="container max-w-screen-lg mx-auto py-1 flex flex-wrap items-center">
-  <a href="../">
-    <img class="h-12 ml-1 mr-2 p-2 hover:opacity-80" src="https://edge-server.224.works/pyramid/logo.svg"
-      alt="Pyramid logo(トップヘ戻る)">
-    </img>
-  </a>
+<header class="py-1 bg-white shadow">
+  <nav class="container max-w-screen-lg mx-auto flex items-center">
+    <a href="../">
+      <img class="h-12 ml-1 mr-2 p-2 hover:opacity-80" src="../images/logo.svg" alt="Pyramid logo(トップヘ戻る)">
+      </img>
+    </a>
+    <div class="ml-auto">
+      <a class="mr-4 text-slate-700 hover:text-slate-500" href="../playground/">プレイグラウンド</a>
+      <a class="mr-4 text-slate-700 hover:text-slate-500" href="../tutorial/">チュートリアル</a>
+    </div>
+  </nav>
 </header>
 
-<body class="container max-w-screen-lg mx-auto flex flex-col min-h-screen">
-  <main class="flex-grow">
+<body class="flex flex-col min-h-screen">
+  <main class="container max-w-screen-lg mx-auto flex-grow">
     <dev class="sm:flex">
       <section class="m-4 leading-relaxed sm:order-2">
         <?php include('pageloader.php'); ?>
       </section>
-      <aside class="w-56 ml-2 my-2 text-slate-800 order-1" aria-label="Sidebar">
+      <aside class="w-56 ml-2 mt-4 mb-2 text-slate-800 order-1" aria-label="Sidebar">
         <a class="mx-1" href="https://pyramid.224.works/doc/">
           <h1
             class="inline-flex items-center rounded bg-slate-100 w-52 py-1 pl-2 text-slate-800 hover:opacity-90 text-2xl">
