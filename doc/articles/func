@@ -78,9 +78,9 @@
 <pyramid-push-block class="pyramid-block" style="margin-left: 5px; margin-bottom: 10px; width: 100px; height: 50px;"><div class="content-wrapper"><span class="content">push</span></div><span class="type">List&lt;_&gt;</span></pyramid-push-block>
 
 <h4 id="list4">pop(lst&lt;gen&gt;)</h4>
-<pyramid-pop-block class="pyramid-block" style="margin-left: 5px; margin-bottom: 10px; width: 100px; height: 50px;"><div class="content-wrapper"><span class="content">pop</span></div><span class="type">_</span></pyramid-pop-block>
 
 <p>lstの先頭要素を返します。</p>
+<pyramid-pop-block class="pyramid-block" style="margin-left: 5px; margin-bottom: 10px; width: 100px; height: 50px;"><div class="content-wrapper"><span class="content">pop</span></div><span class="type">_</span></pyramid-pop-block>
 
 <h4 id="list5">rest(lst&lt;gen&gt;)</h4>
 
