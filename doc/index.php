@@ -34,12 +34,6 @@
   <link rel="stylesheet" href="https://edge-server.224.works/pyramid/design.css">
   <link rel="stylesheet" href="blockpreview.css">
   <!-- /CSS -->
-  <!-- MathJax -->
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script><!--←IE -->
-  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-  <!-- These scripts includes the work that is distributed in the Apache License 2.0.
-  https://github.com/mathjax/MathJax-src/blob/master/LICENSE -->
-  <!-- /MathJax -->
 </head>
 <header class="py-1 bg-white shadow">
   <nav class="container max-w-screen-lg mx-auto flex items-center">
@@ -73,12 +67,13 @@
             ドキュメント
           </h1>
         </a>
-        <a href="?page=literal" class="hover:text-slate-700">
+        <a href="?page=type" class="hover:text-slate-700">
           <h2 class="pl-2 mx-2 mt-4 text-xl border-l-2 border-sky-100 hover:border-sky-400">
-            型</h2>
+            Pyramidの型</h2>
         </a>
-        <a href="?page=i32" class="hover:text-slate-700">
-          <h3 class="pl-2 mx-2 mt-3 text-lg border-l-2 border-sky-100 hover:border-sky-400 ml-6">i32(numに統合予定)</h3>
+        <a href="?page=block" class="hover:text-slate-700">
+          <h2 class="pl-2 mx-2 mt-4 text-xl border-l-2 border-sky-100 hover:border-sky-400">
+            Pyramidのブロック</h2>
         </a>
         <a href="?page=calc" class="hover:text-slate-700">
           <h2 class="pl-2 mx-2 mt-4 text-xl border-l-2 border-sky-100 hover:border-sky-400">
