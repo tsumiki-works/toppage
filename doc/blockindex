@@ -1,10 +1,10 @@
-<h2 class="text-lg">機能から探す</h2>
+<h2>機能から探す</h2>
 画面左（スマートフォンの場合は画面下）のメニューから選択してください。
 
-<h2 class="text-lg mt-6">ブロック一覧から探す</h2>
+<h2 class="mt-10">ブロック一覧から探す</h2>
 
 <a href="?page=type" class="pyramid-menutab" style="margin-left: 5px; margin-top: 20px; width: 60px; height: 50px; background-color: rgb(93, 140, 212); border-radius: 50px;"><span>Literal</span></a>
-<div class="flex flex-wrap" style="margin-top: 10px;">
+<div class="flex flex-wrap" style="margin-top: 10px;;">
     <a href="?page=type#number">
         <pyramid-literal-block class="pyramid-block" style="margin-left: 5px; margin-bottom: 10px; width: 100px; height: 50px;"><div class="content-wrapper"><span class="content">0</span></div><span class="type">num</span></pyramid-literal-block>
     </a>
