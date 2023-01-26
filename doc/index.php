@@ -79,31 +79,31 @@
           <h2 class="pl-2 mx-2 mt-4 text-xl border-l-2 border-sky-100 hover:border-sky-400">
             演算</h2>
         </a>
-        <a href="?page=arithmetic" class="hover:text-slate-700">
+        <a href="?page=calc#arithmetic" class="hover:text-slate-700">
           <h3 class="pl-2 mx-2 mt-3 text-lg border-l-2 border-sky-100 hover:border-sky-400 ml-6">算術演算子</h3>
         </a>
-        <a href="?page=logic" class="hover:text-slate-700">
+        <a href="?page=calc#logic" class="hover:text-slate-700">
           <h3 class="pl-2 mx-2 mt-3 text-lg border-l-2 border-sky-100 hover:border-sky-400 ml-6">論理演算子</h3>
         </a>
-        <a href="?page=comparison" class="hover:text-slate-700">
+        <a href="?page=calc#comparison" class="hover:text-slate-700">
           <h3 class="pl-2 mx-2 mt-3 text-lg border-l-2 border-sky-100 hover:border-sky-400 ml-6">比較演算子</h3>
         </a>
         <a href="?page=func" class="hover:text-slate-700">
           <h2 class="pl-2 mx-2 mt-4 text-xl border-l-2 border-sky-100 hover:border-sky-400">
             組み込み関数</h2>
         </a>
-        <a href="?page=iii" class="hover:text-slate-700">
+        <a href="?page=fanc#" class="hover:text-slate-700">
           <h3 class="pl-2 mx-2 mt-3 text-lg border-l-2 border-sky-100 hover:border-sky-400 ml-6">工事中</h3>
         </a>
       </aside>
     </dev>
   </main>
 </body>
-<footer class="container max-w-screen-lg p-2 text-slate-600">
+<footer class="container max-w-screen-lg mx-auto p-2 text-slate-600">
   <p>Copyright (c) 2022 TsumikiWorks</p>
   <p class="text-sm">Released under the MIT license
     <a href="https://github.com/tsumiki-works/Pyramid/blob/main/LICENSE"
-      class="hover:text-slate-500">https://github.com/tsumiki-works/Pyramid/blob/main/LICENSE</a>
+      class="hover:text-slate-500" target="_blank" rel="noopener noreferrer">https://github.com/tsumiki-works/Pyramid/blob/main/LICENSE</a>
   </p>
 </footer>
 

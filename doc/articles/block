@@ -1,0 +1,70 @@
+<h2>Pyramidのブロック</h2>
+
+<p>
+    Pyramidには4種類のブロックがあります。
+    これらの使い方は
+    <a class="textlink" href="/tutorial/">チュートリアル</a>
+    で学ぶこともできます。
+</p>
+
+<h3>リテラルブロック</h3>
+
+<p>
+    関数型言語における即値を表現するブロックです。
+    関数定義ブロックを用いることで、
+    Number型、String型、Bool型のシンボルブロックに値を束縛できます。
+    List型のリテラルブロックには専用のListブロックが用意されています。
+</p>
+<h5>Examples</h5>
+<div class="flex flex-wrap">
+    <pyramid-literal-block class="pyramid-block" style="margin-left: 5px; margin-bottom: 10px; width: 100px; height: 50px;"><div class="content-wrapper"><span class="content">0</span></div><span class="type">num</span></pyramid-literal-block>
+    <pyramid-literal-block class="pyramid-block" style="margin-left: 5px; margin-bottom: 10px; width: 100px; height: 50px;"><div class="content-wrapper"><span class="content">text</span></div><span class="type">string</span></pyramid-literal-block>
+    <pyramid-literal-block class="pyramid-block" style="margin-left: 5px; margin-bottom: 10px; width: 100px; height: 50px;"><div class="content-wrapper"><span class="content">true</span></div><span class="type">bool</span></pyramid-literal-block>
+    <pyramid-list-block class="pyramid-block" style="margin-left: 5px; margin-bottom: 10px; width: 100px; height: 50px;"><div class="content-wrapper"><span class="content">LIST(0)</span></div><span class="type">List&lt;_&gt;</span></pyramid-list-block>
+</div>
+
+<h3>シンボルブロック</h3>
+
+<p>
+    変数及び組み込み関数を表現するブロックです。
+    リスト操作用の組み込み関数は専用のブロックが用意されています。
+</p>
+<h5>Examples</h5>
+<div class="flex flex-wrap">
+    <a href="?page=calc#arithmetic1">
+        <pyramid-symbol-block class="pyramid-block" style="margin-left: 5px; margin-bottom: 10px; width: 100px; height: 50px;"><div class="content-wrapper"><span class="content">+</span></div><span class="type">num-&gt;num-&gt;num</span></pyramid-symbol-block>
+    </a>
+    <a href="?page=calc#logic1">
+        <pyramid-symbol-block class="pyramid-block" style="margin-left: 5px; margin-bottom: 10px; width: 100px; height: 50px;"><div class="content-wrapper"><span class="content">!</span></div><span class="type">bool-&gt;bool</span></pyramid-symbol-block>
+    </a>
+    <a href="?page=calc#comparison1">
+        <pyramid-symbol-block class="pyramid-block" style="margin-left: 5px; margin-bottom: 10px; width: 100px; height: 50px;"><div class="content-wrapper"><span class="content">==</span></div><span class="type">num-&gt;num-&gt;bool</span></pyramid-symbol-block>
+    </a>
+    <a href="?page=func#math1">
+        <pyramid-symbol-block class="pyramid-block" style="margin-left: 5px; margin-bottom: 10px; width: 100px; height: 50px;"><div class="content-wrapper"><span class="content">log</span></div><span class="type">num-&gt;num</span></pyramid-symbol-block>
+    </a>
+    <a href="?page=func#list1">
+        <pyramid-length-block class="pyramid-block" style="margin-left: 5px; margin-bottom: 10px; width: 100px; height: 50px;"><div class="content-wrapper"><span class="content">length</span></div><span class="type">num</span></pyramid-length-block>
+    </a>
+</div>
+
+<h3 id="define">関数定義ブロック</h3>
+
+<p>
+    関数の定義を行うブロックです。
+    ブロックの下部に同じ名前のシンボルブロックをつけることで評価できます。
+    <a class="textlink" href="/tutorial/do/?q=6">こちらから</a>
+    使い方を確認できます。
+</p>
+<pyramid-define-block class="pyramid-block" style="margin-left: 5px; margin-bottom: 10px; width: 100px; height: 50px;"><div class="content-wrapper"><span class="content">f</span><span class="pyramid-argument">x</span></div><span class="type">_-&gt;_</span></pyramid-define-block>
+
+<h3 id="if">条件分岐ブロック</h3>
+
+<p>
+    if文を表現するブロックです。
+    一般的なプログラミング言語の三項演算子と引数の順番は同じです。
+    第一オペランドに条件式のブロック、
+    第二オペランドに条件式が真であるときの式のブロック、
+    第三オペランドに、条件式が偽であるときの式のブロックをつけます。
+</p>
+<pyramid-if-block class="pyramid-block" style="margin-left: 5px; margin-bottom: 10px; width: 100px; height: 50px;"><div class="content-wrapper"><span class="content">if</span></div><span class="type">_</span></pyramid-if-block>
