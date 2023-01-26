@@ -34,12 +34,6 @@
   <link rel="stylesheet" href="https://edge-server.224.works/pyramid/design.css">
   <link rel="stylesheet" href="blockpreview.css">
   <!-- /CSS -->
-  <!-- MathJax -->
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script><!--←IE -->
-  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-  <!-- These scripts includes the work that is distributed in the Apache License 2.0.
-  https://github.com/mathjax/MathJax-src/blob/master/LICENSE -->
-  <!-- /MathJax -->
 </head>
 <header class="py-1 bg-white shadow">
   <nav class="container max-w-screen-lg mx-auto flex items-center">
@@ -47,7 +41,7 @@
       <img class="h-12 ml-1 mr-2 p-2 hover:opacity-80" src="../images/logo.svg" alt="Pyramid logo(トップヘ戻る)">
       </img>
     </a>
-    <div class="ml-auto">
+    <div class="ml-auto hidden md:inline-block">
       <a class="mr-4 text-slate-700 hover:text-slate-500" href="../playground/">プレイグラウンド</a>
       <a class="mr-4 text-slate-700 hover:text-slate-500" href="../tutorial/">チュートリアル</a>
     </div>
@@ -73,42 +67,46 @@
             ドキュメント
           </h1>
         </a>
-        <a href="?page=literal" class="hover:text-slate-700">
+        <a href="?page=type" class="hover:text-slate-700">
           <h2 class="pl-2 mx-2 mt-4 text-xl border-l-2 border-sky-100 hover:border-sky-400">
-            型</h2>
+            Pyramidの型</h2>
         </a>
-        <a href="?page=i32" class="hover:text-slate-700">
-          <h3 class="pl-2 mx-2 mt-3 text-lg border-l-2 border-sky-100 hover:border-sky-400 ml-6">i32(numに統合予定)</h3>
+        <a href="?page=block" class="hover:text-slate-700">
+          <h2 class="pl-2 mx-2 mt-4 text-xl border-l-2 border-sky-100 hover:border-sky-400">
+            Pyramidのブロック</h2>
         </a>
         <a href="?page=calc" class="hover:text-slate-700">
           <h2 class="pl-2 mx-2 mt-4 text-xl border-l-2 border-sky-100 hover:border-sky-400">
             演算</h2>
         </a>
-        <a href="?page=arithmetic" class="hover:text-slate-700">
+        <a href="?page=calc#arithmetic" class="hover:text-slate-700">
           <h3 class="pl-2 mx-2 mt-3 text-lg border-l-2 border-sky-100 hover:border-sky-400 ml-6">算術演算子</h3>
         </a>
-        <a href="?page=logic" class="hover:text-slate-700">
+        <a href="?page=calc#logic" class="hover:text-slate-700">
           <h3 class="pl-2 mx-2 mt-3 text-lg border-l-2 border-sky-100 hover:border-sky-400 ml-6">論理演算子</h3>
         </a>
-        <a href="?page=comparison" class="hover:text-slate-700">
+        <a href="?page=calc#comparison" class="hover:text-slate-700">
           <h3 class="pl-2 mx-2 mt-3 text-lg border-l-2 border-sky-100 hover:border-sky-400 ml-6">比較演算子</h3>
         </a>
         <a href="?page=func" class="hover:text-slate-700">
           <h2 class="pl-2 mx-2 mt-4 text-xl border-l-2 border-sky-100 hover:border-sky-400">
             組み込み関数</h2>
         </a>
-        <a href="?page=iii" class="hover:text-slate-700">
-          <h3 class="pl-2 mx-2 mt-3 text-lg border-l-2 border-sky-100 hover:border-sky-400 ml-6">工事中</h3>
+        <a href="?page=func#math" class="hover:text-slate-700">
+          <h3 class="pl-2 mx-2 mt-3 text-lg border-l-2 border-sky-100 hover:border-sky-400 ml-6">数学関数</h3>
+        </a>
+        <a href="?page=func#list" class="hover:text-slate-700">
+          <h3 class="pl-2 mx-2 mt-3 text-lg border-l-2 border-sky-100 hover:border-sky-400 ml-6">リスト操作関数</h3>
         </a>
       </aside>
     </dev>
   </main>
 </body>
-<footer class="container max-w-screen-lg p-2 text-slate-600">
+<footer class="container max-w-screen-lg mx-auto p-2 text-slate-600">
   <p>Copyright (c) 2022 TsumikiWorks</p>
   <p class="text-sm">Released under the MIT license
     <a href="https://github.com/tsumiki-works/Pyramid/blob/main/LICENSE"
-      class="hover:text-slate-500">https://github.com/tsumiki-works/Pyramid/blob/main/LICENSE</a>
+      class="hover:text-slate-500" target="_blank" rel="noopener noreferrer">https://github.com/tsumiki-works/Pyramid/blob/main/LICENSE</a>
   </p>
 </footer>
 

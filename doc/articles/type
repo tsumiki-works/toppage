@@ -1,0 +1,32 @@
+<h2>Pyramidの型</h2>
+<p>
+    このページでは、Pyramidの型の種類についての説明をしています。
+</p>
+
+<p>
+    Pyramidは実行前に、
+    各ブロック及び出力ブロックの型が決まっている静的型付け言語です。
+    以下、四種類の型を有しています。
+</p></a>
+
+<h3 id="number">Number型</h3>
+<p>数値を表現する型です。</p>
+<pyramid-literal-block class="pyramid-block" style="margin-left: 5px; margin-top: 10px; width: 100px; height: 50px;"><div class="content-wrapper"><span class="content">0</span></div><span class="type">num</span></pyramid-literal-block>
+
+<h3 id="string">String型</h3>
+<p>文字列を表現する型です。</p>
+<pyramid-literal-block class="pyramid-block" style="margin-left: 5px; margin-top: 10px; width: 100px; height: 50px;"><div class="content-wrapper"><span class="content">text</span></div><span class="type">string</span></pyramid-literal-block>
+
+<h3 id="bool">Bool型</h3>
+<p>真偽値を表現する型です。</p>
+<div class="flex flex-wrap">
+    <pyramid-literal-block class="pyramid-block" style="margin-left: 5px; margin-top: 10px; width: 100px; height: 50px;"><div class="content-wrapper"><span class="content">true</span></div><span class="type">bool</span></pyramid-literal-block>
+    <pyramid-literal-block class="pyramid-block" style="margin-left: 5px; margin-top: 10px; width: 100px; height: 50px;"><div class="content-wrapper"><span class="content">false</span></div><span class="type">bool</span></pyramid-literal-block>
+</div>
+
+<h3 id="list">List型</h3>
+<p>
+    リスト（正確には単方向連結リスト）を表現する型です。
+    List型はリストの要素に任意の型を取ることのできるジェネリクスを有しています。
+</p>
+<pyramid-list-block class="pyramid-block" style="margin-left: 5px; margin-top: 10px; width: 100px; height: 50px;"><div class="content-wrapper"><span class="content">LIST(0)</span></div><span class="type">List&lt;_&gt;</span></pyramid-list-block>

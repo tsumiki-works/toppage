@@ -1,0 +1,126 @@
+<h2>演算</h2>
+
+<!-- 内部仕様に関する記述には"attention!"のコメントを残しています。内部仕様が変わった場合は記述の修正をしてください。-->
+
+<p>
+    このページでは、Pyramidの演算すべてに関する情報を説明しています。
+</p>
+
+<!-- attention! -->
+<p>
+    Pyramidの演算子は、TypeScriptの演算子を内部的に呼び出しています。
+    その為、細かい演算子の挙動を確認したい場合は、
+    TypeScript及び
+    <a class="textlink" href="https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Operators" target="_blank" rel="noopener noreferrer">
+        JavaScriptのリファレンス
+    </a>
+    を参照するとよいでしょう。
+</p>
+
+<h3 id="arithmetic">算術演算子</h3>
+<p>
+    算術演算子は
+    <a class="textlink" href="/doc/?page=type#number">Number型</a>
+    のオペランドに対する演算を行います。
+</p>
+
+<h4 id="arithmetic1">+</h4>
+<p>引数の数: 2</p>
+<p>加算演算子です。二つのオペランドの値を加算した結果を返します。</p>
+<pyramid-symbol-block class="pyramid-block" style="margin-left: 5px; margin-bottom: 10px; width: 100px; height: 50px;"><div class="content-wrapper"><span class="content">+</span></div><span class="type">num-&gt;num-&gt;num</span></pyramid-symbol-block>
+
+<h4 id="arithmetic2">-</h4>
+<p>引数の数: 2</p>
+<p>減算演算子です。第一オペランドの値から第二オペランドの値を減算した結果を返します。</p>
+<pyramid-symbol-block class="pyramid-block" style="margin-left: 5px; margin-bottom: 10px; width: 100px; height: 50px;"><div class="content-wrapper"><span class="content">-</span></div><span class="type">num-&gt;num-&gt;num</span></pyramid-symbol-block>
+
+<h4 id="arithmetic3">*</h4>
+<p>引数の数: 2</p>
+<p>乗算演算子です。二つのオペランドの値を乗算した結果を返します。</p>
+<pyramid-symbol-block class="pyramid-block" style="margin-left: 5px; margin-bottom: 10px; width: 100px; height: 50px;"><div class="content-wrapper"><span class="content">*</span></div><span class="type">num-&gt;num-&gt;num</span></pyramid-symbol-block>
+
+<h4 id="arithmetic4">/</h4>
+<p>引数の数: 2</p>
+<p>除算演算子です。第一オペランドの値を第二オペランドの値で除算した結果を返します。</p>
+<pyramid-symbol-block class="pyramid-block" style="margin-left: 5px; margin-bottom: 10px; width: 100px; height: 50px;"><div class="content-wrapper"><span class="content">/</span></div><span class="type">num-&gt;num-&gt;num</span></pyramid-symbol-block>
+
+<h4 id="arithmetic5">%</h4>
+<p>引数の数: 2</p>
+<p>剰余演算子です。第一オペランドの値を第二オペランドの値で除算した結果のあまりを返します。</p>
+<pyramid-symbol-block class="pyramid-block" style="margin-left: 5px; margin-bottom: 10px; width: 100px; height: 50px;"><div class="content-wrapper"><span class="content">%</span></div><span class="type">num-&gt;num-&gt;num</span></pyramid-symbol-block>
+
+<h4 id="arithmetic6">**</h4>
+<p>引数の数: 2</p>
+<p>べき乗演算子です。第一オペランドの値を第二オペランドの値でべき乗した結果を返します。</p>
+<pyramid-symbol-block class="pyramid-block" style="margin-left: 5px; margin-bottom: 10px; width: 100px; height: 50px;"><div class="content-wrapper"><span class="content">**</span></div><span class="type">num-&gt;num-&gt;num</span></pyramid-symbol-block>
+
+<h3 id="logic">論理演算子</h3>
+<p>
+    論理演算子は
+    <a class="textlink" href="/doc/?page=type#bool">Bool型</a>
+    のオペランドに対する演算を行います。
+</p>
+
+<h4 id="logic1">!</h4>
+<p>引数の数: 1</p>
+<p>否定演算子です。オペランドの真偽値を反転させた値を返します。</p>
+<pyramid-symbol-block class="pyramid-block" style="margin-left: 5px; margin-bottom: 10px; width: 100px; height: 50px;"><div class="content-wrapper"><span class="content">!</span></div><span class="type">bool-&gt;bool</span></pyramid-symbol-block>
+
+<h4 id="logic2">&&</h4>
+<p>引数の数: 2</p>
+<p>論理積演算子です。二つのオペランドの論理積を取った値を返します。</p>
+<pyramid-symbol-block class="pyramid-block" style="margin-left: 5px; margin-bottom: 10px; width: 100px; height: 50px;"><div class="content-wrapper"><span class="content">&amp;&amp;</span></div><span class="type">bool-&gt;bool-&gt;bool</span></pyramid-symbol-block>
+
+<h4 id="logic3">||</h4>
+<p>引数の数: 2</p>
+<p>論理和演算子です。二つのオペランドの論理和を取った値を返します。</p>
+<pyramid-symbol-block class="pyramid-block" style="margin-left: 5px; margin-bottom: 10px; width: 100px; height: 50px;"><div class="content-wrapper"><span class="content">||</span></div><span class="type">bool-&gt;bool-&gt;bool</span></pyramid-symbol-block>
+
+<h3 id="comparison">比較演算子</h3>
+<!-- attention! -->
+<p>
+    比較演算子は二つのオペランドの比較し、その結果を真偽値（
+    <a class="textlink" href="/doc/?page=type#bool">Bool型</a>
+    ）で返します。
+    "==（文字列等価比較演算子）は
+    <a class="textlink" href="/doc/?page=type#string">String型</a>
+    同士の比較を行い、それ以外は
+    <a class="textlink" href="/doc/?page=type#number">Number型</a>
+    同士の比較を行います。
+    （等値演算子はJavaScriptの厳密等価演算子、厳密非等価演算子を内部的に利用しています。）
+</p>
+
+<h4 id="comparison1">==</h4>
+<p>引数の数: 2</p>
+<p>等価演算子です。二つのオペランドの値が等しければtrue、そうでなければfalseを返します。</p>
+<pyramid-symbol-block class="pyramid-block" style="margin-left: 5px; margin-bottom: 10px; width: 100px; height: 50px;"><div class="content-wrapper"><span class="content">==</span></div><span class="type">num-&gt;num-&gt;bool</span></pyramid-symbol-block>
+
+<h4 id="comparison2">!=</h4>
+<p>引数の数: 2</p>
+<p>非等価演算子です。二つのオペランドの値が等しくなければtrue、そうでなければfalseを返します。</p>
+<pyramid-symbol-block class="pyramid-block" style="margin-left: 5px; margin-bottom: 10px; width: 100px; height: 50px;"><div class="content-wrapper"><span class="content">!=</span></div><span class="type">num-&gt;num-&gt;bool</span></pyramid-symbol-block>
+
+<h4 id="comparison3">&gt;</h4>
+<p>引数の数: 2</p>
+<p>大なり演算子です。第一オペランドの値が第二オペランドの値よりも大きければtrue、そうでなければfalseを返します。</p>
+<pyramid-symbol-block class="pyramid-block" style="margin-left: 5px; margin-bottom: 10px; width: 100px; height: 50px;"><div class="content-wrapper"><span class="content">&gt;</span></div><span class="type">num-&gt;num-&gt;bool</span></pyramid-symbol-block>
+
+<h4 id="comparison4">&lt;</h4>
+<p>引数の数: 2</p>
+<p>小なり演算子です。第一オペランドの値が第二オペランドの値よりも小さければtrue、そうでなければfalseを返します。</p>
+<pyramid-symbol-block class="pyramid-block" style="margin-left: 5px; margin-bottom: 10px; width: 100px; height: 50px;"><div class="content-wrapper"><span class="content">&lt;</span></div><span class="type">num-&gt;num-&gt;bool</span></pyramid-symbol-block>
+
+<h4 id="comparison5">&gt;=</h4>
+<p>引数の数: 2</p>
+<p>大なりイコール演算子です。第一オペランドの値が第二オペランドの値以上であればtrue、そうでなければfalseを返します。</p>
+<pyramid-symbol-block class="pyramid-block" style="margin-left: 5px; margin-bottom: 10px; width: 100px; height: 50px;"><div class="content-wrapper"><span class="content">&gt;=</span></div><span class="type">num-&gt;num-&gt;bool</span></pyramid-symbol-block>
+
+<h4 id="comparison6">&lt;=</h4>
+<p>引数の数: 2</p>
+<p>小なりイコール演算子です。第一オペランドの値が第二オペランドの値以下であればtrue、そうでなければfalseを返します。</p>
+<pyramid-symbol-block class="pyramid-block" style="margin-left: 5px; margin-bottom: 10px; width: 100px; height: 50px;"><div class="content-wrapper"><span class="content">&lt;=</span></div><span class="type">num-&gt;num-&gt;bool</span></pyramid-symbol-block>
+
+<h4 id="comparison7">"==</h4>
+<p>引数の数: 2</p>
+<p>等価演算子です。二つのオペランドの文字列リテラルが等しければtrue、そうでなければfalseを返します。</p>
+<pyramid-symbol-block class="pyramid-block" style="margin-left: 5px; margin-bottom: 10px; width: 100px; height: 50px;"><div class="content-wrapper"><span class="content">"==</span></div><span class="type">string-&gt;string-&gt;bool</span></pyramid-symbol-block>

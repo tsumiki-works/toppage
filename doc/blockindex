@@ -1,88 +1,137 @@
-<h2 class="text-lg">機能から探す</h2>
-サイドメニュー（スマートフォンの場合は画面下のメニュー）から選択してください。
+<h2>機能から探す</h2>
+画面左（スマートフォンの場合は画面下）のメニューから選択してください。
 
-<h2 class="text-lg mt-6">ブロック一覧から探す</h2>
+<h2 class="mt-10">ブロック一覧から探す</h2>
 
-<a href="?page=type-and-block" class="pyramid-menutab" style="margin-left: 5px; margin-top: 20px; width: 60px; height: 50px; background-color: rgb(93, 140, 212); border-radius: 50px;"><span>Literal</span></a>
-<div class="flex flex-wrap">
-    <a href="?page=type-and-block">
-        <pyramid-literal-block class="pyramid-block" style="margin-left: 5px; margin-top: 10px; width: 100px; height: 50px;"><div class="content-wrapper"><span class="content">0</span></div><span class="type">num</span></pyramid-literal-block>
+<a href="?page=type" class="pyramid-menutab" style="margin-left: 5px; margin-top: 20px; width: 60px; height: 50px; background-color: rgb(93, 140, 212); border-radius: 50px;"><span>Literal</span></a>
+<div class="flex flex-wrap" style="margin-top: 10px;;">
+    <a href="?page=type#number">
+        <pyramid-literal-block class="pyramid-block" style="margin-left: 5px; margin-bottom: 10px; width: 100px; height: 50px;"><div class="content-wrapper"><span class="content">0</span></div><span class="type">num</span></pyramid-literal-block>
     </a>
-    <pyramid-literal-block class="pyramid-block" style="margin-left: 5px; margin-top: 10px; width: 100px; height: 50px;"><div class="content-wrapper"><span class="content">text</span></div><span class="type">string</span></pyramid-literal-block>
-    <pyramid-literal-block class="pyramid-block" style="margin-left: 5px; margin-top: 10px; width: 100px; height: 50px;"><div class="content-wrapper"><span class="content">true</span></div><span class="type">bool</span></pyramid-literal-block>
-    <pyramid-literal-block class="pyramid-block" style="margin-left: 5px; margin-top: 10px; width: 100px; height: 50px;"><div class="content-wrapper"><span class="content">false</span></div><span class="type">bool</span></pyramid-literal-block>
-    <pyramid-list-block class="pyramid-block" style="margin-left: 5px; margin-top: 10px; width: 100px; height: 50px;"><div class="content-wrapper"><span class="content">LIST(0)</span></div><span class="type">List&lt;_&gt;</span></pyramid-list-block>
-</div>
-
-<a href="?page=arithmetic" class="pyramid-menutab" style="margin-left: 5px; margin-top: 20px; width: 60px; height: 50px; background-color: rgb(85, 156, 179); border-radius: 50px;"><span>Arith.</span></a>
-<div class="flex flex-wrap">
-    <a href="?page=arithmetic#1">
-        <pyramid-symbol-block class="pyramid-block" style="margin-left: 5px; margin-top: 10px; width: 100px; height: 50px;"><div class="content-wrapper"><span class="content">+</span></div><span class="type">num-&gt;num-&gt;num</span></pyramid-symbol-block>
+    <a href="?page=type#string">
+        <pyramid-literal-block class="pyramid-block" style="margin-left: 5px; margin-bottom: 10px; width: 100px; height: 50px;"><div class="content-wrapper"><span class="content">text</span></div><span class="type">string</span></pyramid-literal-block>
     </a>
-    <a href="?page=arithmetic#2">
-        <pyramid-symbol-block class="pyramid-block" style="margin-left: 5px; margin-top: 10px; width: 100px; height: 50px;"><div class="content-wrapper"><span class="content">-</span></div><span class="type">num-&gt;num-&gt;num</span></pyramid-symbol-block>
+    <a href="?page=type#bool">
+        <pyramid-literal-block class="pyramid-block" style="margin-left: 5px; margin-bottom: 10px; width: 100px; height: 50px;"><div class="content-wrapper"><span class="content">true</span></div><span class="type">bool</span></pyramid-literal-block>
     </a>
-    <a href="?page=arithmetic#3">
-        <pyramid-symbol-block class="pyramid-block" style="margin-left: 5px; margin-top: 10px; width: 100px; height: 50px;"><div class="content-wrapper"><span class="content">*</span></div><span class="type">num-&gt;num-&gt;num</span></pyramid-symbol-block>
+    <a href="?page=type#bool">
+        <pyramid-literal-block class="pyramid-block" style="margin-left: 5px; margin-bottom: 10px; width: 100px; height: 50px;"><div class="content-wrapper"><span class="content">false</span></div><span class="type">bool</span></pyramid-literal-block>
     </a>
-    <a href="?page=arithmetic#4">
-        <pyramid-symbol-block class="pyramid-block" style="margin-left: 5px; margin-top: 10px; width: 100px; height: 50px;"><div class="content-wrapper"><span class="content">/</span></div><span class="type">num-&gt;num-&gt;num</span></pyramid-symbol-block>
-    </a>
-    <a href="?page=arithmetic#5">
-        <pyramid-symbol-block class="pyramid-block" style="margin-left: 5px; margin-top: 10px; width: 100px; height: 50px;"><div class="content-wrapper"><span class="content">%</span></div><span class="type">num-&gt;num-&gt;num</span></pyramid-symbol-block>
-    </a>
-    <a href="?page=arithmetic#6">
-        <pyramid-symbol-block class="pyramid-block" style="margin-left: 5px; margin-top: 10px; width: 100px; height: 50px;"><div class="content-wrapper"><span class="content">**</span></div><span class="type">num-&gt;num-&gt;num</span></pyramid-symbol-block>
+    <a href="?page=type#list">
+        <pyramid-list-block class="pyramid-block" style="margin-left: 5px; margin-bottom: 10px; width: 100px; height: 50px;"><div class="content-wrapper"><span class="content">LIST(0)</span></div><span class="type">List&lt;_&gt;</span></pyramid-list-block>
     </a>
 </div>
 
-<a href="?page=logic" class="pyramid-menutab" style="margin-left: 5px; margin-top: 20px; width: 60px; height: 50px; background-color: rgb(85, 173, 165); border-radius: 50px;"><span>Logic</span></a>
-<div class="flex flex-wrap">
-    <a href="?page=logic#1">
-        <pyramid-symbol-block class="pyramid-block" style="margin-left: 5px; margin-top: 10px; width: 100px; height: 50px;"><div class="content-wrapper"><span class="content">!</span></div><span class="type">bool-&gt;bool</span></pyramid-symbol-block>
+<a href="?page=calc#arithmetic" class="pyramid-menutab" style="margin-left: 5px; margin-top: 20px; width: 60px; height: 50px; background-color: rgb(85, 156, 179); border-radius: 50px;"><span>Arith.</span></a>
+<div class="flex flex-wrap" style="margin-top: 10px;">
+    <a href="?page=calc#arithmetic1">
+        <pyramid-symbol-block class="pyramid-block" style="margin-left: 5px; margin-bottom: 10px; width: 100px; height: 50px;"><div class="content-wrapper"><span class="content">+</span></div><span class="type">num-&gt;num-&gt;num</span></pyramid-symbol-block>
     </a>
-    <a href="?page=logic#1">
-        <pyramid-symbol-block class="pyramid-block" style="margin-left: 5px; margin-top: 10px; width: 100px; height: 50px;"><div class="content-wrapper"><span class="content">&amp;&amp;</span></div><span class="type">bool-&gt;bool-&gt;bool</span></pyramid-symbol-block>
+    <a href="?page=calc#arithmetic2">
+        <pyramid-symbol-block class="pyramid-block" style="margin-left: 5px; margin-bottom: 10px; width: 100px; height: 50px;"><div class="content-wrapper"><span class="content">-</span></div><span class="type">num-&gt;num-&gt;num</span></pyramid-symbol-block>
     </a>
-    <a href="?page=logic#1">
-        <pyramid-symbol-block class="pyramid-block" style="margin-left: 5px; margin-top: 10px; width: 100px; height: 50px;"><div class="content-wrapper"><span class="content">||</span></div><span class="type">bool-&gt;bool-&gt;bool</span></pyramid-symbol-block>
+    <a href="?page=calc#arithmetic3">
+        <pyramid-symbol-block class="pyramid-block" style="margin-left: 5px; margin-bottom: 10px; width: 100px; height: 50px;"><div class="content-wrapper"><span class="content">*</span></div><span class="type">num-&gt;num-&gt;num</span></pyramid-symbol-block>
+    </a>
+    <a href="?page=calc#arithmetic4">
+        <pyramid-symbol-block class="pyramid-block" style="margin-left: 5px; margin-bottom: 10px; width: 100px; height: 50px;"><div class="content-wrapper"><span class="content">/</span></div><span class="type">num-&gt;num-&gt;num</span></pyramid-symbol-block>
+    </a>
+    <a href="?page=calc#arithmetic5">
+        <pyramid-symbol-block class="pyramid-block" style="margin-left: 5px; margin-bottom: 10px; width: 100px; height: 50px;"><div class="content-wrapper"><span class="content">%</span></div><span class="type">num-&gt;num-&gt;num</span></pyramid-symbol-block>
+    </a>
+    <a href="?page=calc#arithmetic6">
+        <pyramid-symbol-block class="pyramid-block" style="margin-left: 5px; margin-bottom: 10px; width: 100px; height: 50px;"><div class="content-wrapper"><span class="content">**</span></div><span class="type">num-&gt;num-&gt;num</span></pyramid-symbol-block>
     </a>
 </div>
 
-<a href="?page=comparison" class="pyramid-menutab" style="margin-left: 5px; margin-top: 20px; width: 60px; height: 50px; background-color: rgb(88, 184, 143); border-radius: 50px;"><span>Comp.</span></a>
-<div class="flex flex-wrap">
-    <pyramid-symbol-block class="pyramid-block" style="margin-left: 5px; margin-top: 10px; width: 100px; height: 50px;"><div class="content-wrapper"><span class="content">==</span></div><span class="type">num-&gt;num-&gt;bool</span></pyramid-symbol-block>
-    <pyramid-symbol-block class="pyramid-block" style="margin-left: 5px; margin-top: 10px; width: 100px; height: 50px;"><div class="content-wrapper"><span class="content">!=</span></div><span class="type">num-&gt;num-&gt;bool</span></pyramid-symbol-block>
-    <pyramid-symbol-block class="pyramid-block" style="margin-left: 5px; margin-top: 10px; width: 100px; height: 50px;"><div class="content-wrapper"><span class="content">&gt;</span></div><span class="type">num-&gt;num-&gt;bool</span></pyramid-symbol-block>
-    <pyramid-symbol-block class="pyramid-block" style="margin-left: 5px; margin-top: 10px; width: 100px; height: 50px;"><div class="content-wrapper"><span class="content">&lt;</span></div><span class="type">num-&gt;num-&gt;bool</span></pyramid-symbol-block>
-    <pyramid-symbol-block class="pyramid-block" style="margin-left: 5px; margin-top: 10px; width: 100px; height: 50px;"><div class="content-wrapper"><span class="content">&gt;=</span></div><span class="type">num-&gt;num-&gt;bool</span></pyramid-symbol-block>
-    <pyramid-symbol-block class="pyramid-block" style="margin-left: 5px; margin-top: 10px; width: 100px; height: 50px;"><div class="content-wrapper"><span class="content">&lt;=</span></div><span class="type">num-&gt;num-&gt;bool</span></pyramid-symbol-block>
-    <pyramid-symbol-block class="pyramid-block" style="margin-left: 5px; margin-top: 10px; width: 100px; height: 50px;"><div class="content-wrapper"><span class="content">"==</span></div><span class="type">string-&gt;string-&gt;bool</span></pyramid-symbol-block>
+<a href="?page=calc#logic" class="pyramid-menutab" style="margin-left: 5px; margin-top: 20px; width: 60px; height: 50px; background-color: rgb(85, 173, 165); border-radius: 50px;"><span>Logic</span></a>
+<div class="flex flex-wrap" style="margin-top: 10px;">
+    <a href="?page=calc#logic1">
+        <pyramid-symbol-block class="pyramid-block" style="margin-left: 5px; margin-bottom: 10px; width: 100px; height: 50px;"><div class="content-wrapper"><span class="content">!</span></div><span class="type">bool-&gt;bool</span></pyramid-symbol-block>
+    </a>
+    <a href="?page=calc#logic2">
+        <pyramid-symbol-block class="pyramid-block" style="margin-left: 5px; margin-bottom: 10px; width: 100px; height: 50px;"><div class="content-wrapper"><span class="content">&amp;&amp;</span></div><span class="type">bool-&gt;bool-&gt;bool</span></pyramid-symbol-block>
+    </a>
+    <a href="?page=calc#logic3">
+        <pyramid-symbol-block class="pyramid-block" style="margin-left: 5px; margin-bottom: 10px; width: 100px; height: 50px;"><div class="content-wrapper"><span class="content">||</span></div><span class="type">bool-&gt;bool-&gt;bool</span></pyramid-symbol-block>
+    </a>
 </div>
 
-<a href="?page=function" class="pyramid-menutab" style="margin-left: 5px; margin-top: 20px; width: 60px; height: 50px; background-color: rgb(93, 191, 127); border-radius: 50px;"><span>Fun.</span></a>
-<div class="flex flex-wrap">
-    <pyramid-symbol-block class="pyramid-block" style="margin-left: 5px; margin-top: 10px; width: 100px; height: 50px;"><div class="content-wrapper"><span class="content">log</span></div><span class="type">num-&gt;num</span></pyramid-symbol-block>
-    <pyramid-symbol-block class="pyramid-block" style="margin-left: 5px; margin-top: 10px; width: 100px; height: 50px;"><div class="content-wrapper"><span class="content">exp</span></div><span class="type">num-&gt;num</span></pyramid-symbol-block>
-    <pyramid-symbol-block class="pyramid-block" style="margin-left: 5px; margin-top: 10px; width: 100px; height: 50px;"><div class="content-wrapper"><span class="content">sqrt</span></div><span class="type">num-&gt;num</span></pyramid-symbol-block>
-    <pyramid-symbol-block class="pyramid-block" style="margin-left: 5px; margin-top: 10px; width: 100px; height: 50px;"><div class="content-wrapper"><span class="content">sin</span></div><span class="type">num-&gt;num</span></pyramid-symbol-block>
-    <pyramid-symbol-block class="pyramid-block" style="margin-left: 5px; margin-top: 10px; width: 100px; height: 50px;"><div class="content-wrapper"><span class="content">cos</span></div><span class="type">num-&gt;num</span></pyramid-symbol-block>
-    <pyramid-symbol-block class="pyramid-block" style="margin-left: 5px; margin-top: 10px; width: 100px; height: 50px;"><div class="content-wrapper"><span class="content">tan</span></div><span class="type">num-&gt;num</span></pyramid-symbol-block>
-    <pyramid-symbol-block class="pyramid-block" style="margin-left: 5px; margin-top: 10px; width: 100px; height: 50px;"><div class="content-wrapper"><span class="content">pi</span></div><span class="type">num</span></pyramid-symbol-block>
+<a href="?page=calc#comparison" class="pyramid-menutab" style="margin-left: 5px; margin-top: 20px; width: 60px; height: 50px; background-color: rgb(88, 184, 143); border-radius: 50px;"><span>Comp.</span></a>
+<div class="flex flex-wrap" style="margin-top: 10px;">
+    <a href="?page=calc#comparison1">
+        <pyramid-symbol-block class="pyramid-block" style="margin-left: 5px; margin-bottom: 10px; width: 100px; height: 50px;"><div class="content-wrapper"><span class="content">==</span></div><span class="type">num-&gt;num-&gt;bool</span></pyramid-symbol-block>
+    </a>
+    <a href="?page=calc#comparison2">
+        <pyramid-symbol-block class="pyramid-block" style="margin-left: 5px; margin-bottom: 10px; width: 100px; height: 50px;"><div class="content-wrapper"><span class="content">!=</span></div><span class="type">num-&gt;num-&gt;bool</span></pyramid-symbol-block>
+    </a>
+    <a href="?page=calc#comparison3">
+        <pyramid-symbol-block class="pyramid-block" style="margin-left: 5px; margin-bottom: 10px; width: 100px; height: 50px;"><div class="content-wrapper"><span class="content">&gt;</span></div><span class="type">num-&gt;num-&gt;bool</span></pyramid-symbol-block>
+    </a>
+    <a href="?page=calc#comparison4">
+        <pyramid-symbol-block class="pyramid-block" style="margin-left: 5px; margin-bottom: 10px; width: 100px; height: 50px;"><div class="content-wrapper"><span class="content">&lt;</span></div><span class="type">num-&gt;num-&gt;bool</span></pyramid-symbol-block>
+    </a>
+    <a href="?page=calc#comparison5">
+        <pyramid-symbol-block class="pyramid-block" style="margin-left: 5px; margin-bottom: 10px; width: 100px; height: 50px;"><div class="content-wrapper"><span class="content">&gt;=</span></div><span class="type">num-&gt;num-&gt;bool</span></pyramid-symbol-block>
+    </a>
+    <a href="?page=calc#comparison6">
+        <pyramid-symbol-block class="pyramid-block" style="margin-left: 5px; margin-bottom: 10px; width: 100px; height: 50px;"><div class="content-wrapper"><span class="content">&lt;=</span></div><span class="type">num-&gt;num-&gt;bool</span></pyramid-symbol-block>
+    </a>
+    <a href="?page=calc#comparison7">
+        <pyramid-symbol-block class="pyramid-block" style="margin-left: 5px; margin-bottom: 10px; width: 100px; height: 50px;"><div class="content-wrapper"><span class="content">"==</span></div><span class="type">string-&gt;string-&gt;bool</span></pyramid-symbol-block>
+    </a>
 </div>
 
-<a href="?page=list" class="pyramid-menutab" style="margin-left: 5px; margin-top: 20px; width: 60px; height: 50px; background-color: rgb(153, 169, 194); border-radius: 50px;"><span>List</span></a>
-<div class="flex flex-wrap">
-    <pyramid-map-block class="pyramid-block" style="margin-left: 5px; margin-top: 10px; width: 100px; height: 50px;"><div class="content-wrapper"><span class="content">map</span></div><span class="type">_</span></pyramid-map-block>
-    <pyramid-pop-block class="pyramid-block" style="margin-left: 5px; margin-top: 10px; width: 100px; height: 50px;"><div class="content-wrapper"><span class="content">pop</span></div><span class="type">_</span></pyramid-pop-block>
-    <pyramid-push-block class="pyramid-block" style="margin-left: 5px; margin-top: 10px; width: 100px; height: 50px;"><div class="content-wrapper"><span class="content">push</span></div><span class="type">List&lt;_&gt;</span></pyramid-push-block>
-    <pyramid-rest-block class="pyramid-block" style="margin-left: 5px; margin-top: 10px; width: 100px; height: 50px;"><div class="content-wrapper"><span class="content">rest</span></div><span class="type">List&lt;_&gt;</span></pyramid-rest-block>
-    <pyramid-length-block class="pyramid-block" style="margin-left: 5px; margin-top: 10px; width: 100px; height: 50px;"><div class="content-wrapper"><span class="content">length</span></div><span class="type">num</span></pyramid-length-block>
-    <pyramid-list-block class="pyramid-block" style="margin-left: 5px; margin-top: 10px; width: 100px; height: 50px;"><div class="content-wrapper"><span class="content">LIST(0)</span></div><span class="type">List&lt;_&gt;</span></pyramid-list-block>
+<a href="?page=func" class="pyramid-menutab" style="margin-left: 5px; margin-top: 20px; width: 60px; height: 50px; background-color: rgb(93, 191, 127); border-radius: 50px;"><span>Fun.</span></a>
+<div class="flex flex-wrap" style="margin-top: 10px;">
+    <a href="?page=func#math1">
+        <pyramid-symbol-block class="pyramid-block" style="margin-left: 5px; margin-bottom: 10px; width: 100px; height: 50px;"><div class="content-wrapper"><span class="content">log</span></div><span class="type">num-&gt;num</span></pyramid-symbol-block>
+    </a>
+    <a href="?page=func#math2">
+        <pyramid-symbol-block class="pyramid-block" style="margin-left: 5px; margin-bottom: 10px; width: 100px; height: 50px;"><div class="content-wrapper"><span class="content">exp</span></div><span class="type">num-&gt;num</span></pyramid-symbol-block>
+    </a>
+    <a href="?page=func#math3">
+        <pyramid-symbol-block class="pyramid-block" style="margin-left: 5px; margin-bottom: 10px; width: 100px; height: 50px;"><div class="content-wrapper"><span class="content">sqrt</span></div><span class="type">num-&gt;num</span></pyramid-symbol-block>
+    </a>
+    <a href="?page=func#math4">
+        <pyramid-symbol-block class="pyramid-block" style="margin-left: 5px; margin-bottom: 10px; width: 100px; height: 50px;"><div class="content-wrapper"><span class="content">sin</span></div><span class="type">num-&gt;num</span></pyramid-symbol-block>
+    </a>
+    <a href="?page=func#math5">
+        <pyramid-symbol-block class="pyramid-block" style="margin-left: 5px; margin-bottom: 10px; width: 100px; height: 50px;"><div class="content-wrapper"><span class="content">cos</span></div><span class="type">num-&gt;num</span></pyramid-symbol-block>
+    </a>
+    <a href="?page=func#math6">
+        <pyramid-symbol-block class="pyramid-block" style="margin-left: 5px; margin-bottom: 10px; width: 100px; height: 50px;"><div class="content-wrapper"><span class="content">tan</span></div><span class="type">num-&gt;num</span></pyramid-symbol-block>
+    </a>
 </div>
 
-<a href="?page=define" class="pyramid-menutab" style="margin-left: 5px; margin-top: 20px; width: 60px; height: 50px; background-color: rgb(220, 142, 188); border-radius: 50px;"><span>Define</span></a>
-<div class="flex flex-wrap mb-2">
-    <pyramid-define-block class="pyramid-block" style="margin-left: 5px; margin-top: 10px; width: 100px; height: 50px;"><div class="content-wrapper"><span class="content">f</span><span class="pyramid-argument">x</span></div><span class="type">_-&gt;_</span></pyramid-define-block>
-    <pyramid-if-block class="pyramid-block" style="margin-left: 5px; margin-top: 10px; width: 100px; height: 50px;"><div class="content-wrapper"><span class="content">if</span></div><span class="type">_</span></pyramid-if-block>
+<a href="?page=func#list" class="pyramid-menutab" style="margin-left: 5px; margin-top: 20px; width: 60px; height: 50px; background-color: rgb(153, 169, 194); border-radius: 50px;"><span>List</span></a>
+<div class="flex flex-wrap" style="margin-top: 10px;">
+    <a href="?page=func#list2">
+        <pyramid-map-block class="pyramid-block" style="margin-left: 5px; margin-bottom: 10px; width: 100px; height: 50px;"><div class="content-wrapper"><span class="content">map</span></div><span class="type">_</span></pyramid-map-block>
+    </a>
+    <a href="?page=func#list3">
+        <pyramid-push-block class="pyramid-block" style="margin-left: 5px; margin-bottom: 10px; width: 100px; height: 50px;"><div class="content-wrapper"><span class="content">push</span></div><span class="type">List&lt;_&gt;</span></pyramid-push-block>
+    </a>
+    <a href="?page=func#list4">
+        <pyramid-pop-block class="pyramid-block" style="margin-left: 5px; margin-bottom: 10px; width: 100px; height: 50px;"><div class="content-wrapper"><span class="content">pop</span></div><span class="type">_</span></pyramid-pop-block>
+    </a>
+    <a href="?page=func#list5">
+        <pyramid-rest-block class="pyramid-block" style="margin-left: 5px; margin-bottom: 10px; width: 100px; height: 50px;"><div class="content-wrapper"><span class="content">rest</span></div><span class="type">List&lt;_&gt;</span></pyramid-rest-block>
+    </a>
+    <a href="?page=func#list1">
+        <pyramid-length-block class="pyramid-block" style="margin-left: 5px; margin-bottom: 10px; width: 100px; height: 50px;"><div class="content-wrapper"><span class="content">length</span></div><span class="type">num</span></pyramid-length-block>
+    </a>
+    <a href="?page=type#list">
+        <pyramid-list-block class="pyramid-block" style="margin-left: 5px; margin-bottom: 10px; width: 100px; height: 50px;"><div class="content-wrapper"><span class="content">LIST(0)</span></div><span class="type">List&lt;_&gt;</span></pyramid-list-block>
+    </a>
+</div>
+
+<a href="?page=block#define" class="pyramid-menutab" style="margin-left: 5px; margin-top: 20px; width: 60px; height: 50px; background-color: rgb(220, 142, 188); border-radius: 50px;"><span>Define</span></a>
+<div class="flex flex-wrap mb-2" style="margin-top: 10px;">
+    <a href="?page=block#define">
+        <pyramid-define-block class="pyramid-block" style="margin-left: 5px; margin-bottom: 10px; width: 100px; height: 50px;"><div class="content-wrapper"><span class="content">f</span><span class="pyramid-argument">x</span></div><span class="type">_-&gt;_</span></pyramid-define-block>
+    </a>
+    <a href="?page=block#if">
+        <pyramid-if-block class="pyramid-block" style="margin-left: 5px; margin-bottom: 10px; width: 100px; height: 50px;"><div class="content-wrapper"><span class="content">if</span></div><span class="type">_</span></pyramid-if-block>
+    </a>
 </div>
