@@ -1,3 +1,6 @@
+pyramid-empty-block {
+    background-color: rgba(15, 23, 42, 0.1);
+}
 pyramid-literal-block {
     background-color: #5d8cd4;
 }
@@ -33,15 +36,11 @@ pyramid-length-block {
     display: flex;
     flex-flow: column;
     align-items: center;
-    transition-duration: 0.2s;
     min-width: max-content;
-    box-shadow: 0 0 10px 0 rgba(15, 23, 42, 0);
 }
 
 .pyramid-block:hover {
-    transition-duration: 0.25s;
-    transform: scale(1.4, 1.4);
-    box-shadow: 0 0 10px 0 rgba(15, 23, 42, 0.2);
+    opacity: 0.9;
 }
 
 span.content {
@@ -74,27 +73,9 @@ span.pyramid-argument {
     justify-content: center;
     align-items: center;
     color: white;
-    transition-duration: 0.2s;
     min-width: max-content;
-    box-shadow: 0 0 12px 0 rgba(15, 23, 42, 0);
 }
+
 .pyramid-menutab:hover {
-    transition-duration: 0.25s;
-    transform: scale(1.5, 1.5);
-    box-shadow: 0 0 12px 0 rgba(15, 23, 42, 0.2);
-}
-
-h4 {
-    color: #1e293b;
-    margin-top: 1rem;
-    font-size: x-large;
-    font-weight: bold;
-}
-
-p {
-    color: #1e293b;
-}
-
-a {
-    color: #009ad4;
+    opacity: 0.9;
 }
