@@ -9,12 +9,7 @@
 <!-- attention! -->
 <p>
     Pyramidの演算子は、TypeScriptの演算子を内部的に呼び出しています。
-    その為、細かい演算子の挙動を確認したい場合は、
-    TypeScript及び
-    <a class="textlink" href="https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Operators" target="_blank" rel="noopener noreferrer">
-        JavaScriptのリファレンス
-    </a>
-    を参照するとよいでしょう。
+    その為、細かい演算子の挙動を確認したい場合は、TypeScript及び<a class="textlink" href="https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Operators" target="_blank" rel="noopener noreferrer">JavaScriptのリファレンス</a>を参照するとよいでしょう。
 </p>
 
 <h3 id="arithmetic">算術演算子</h3>
