@@ -39,7 +39,6 @@
   <nav class="container max-w-screen-lg mx-auto flex items-center">
     <a href="../">
       <img class="h-12 ml-1 mr-2 p-2 hover:opacity-80" src="../images/logo.svg" alt="Pyramid logo(トップヘ戻る)">
-      </img>
     </a>
     <div class="ml-auto hidden md:inline-block">
       <a class="mr-4 text-slate-700 hover:text-slate-500" href="../playground/">プレイグラウンド</a>
