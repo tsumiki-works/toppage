@@ -5,6 +5,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ピラミッド</title>
+  <script> // オープンキャンパス発表ポスター用 特殊デザインQRコード（2023年4月23日 野田キャンパス見に来てね！）の処理について
+    // URL末尾についている数字を指定
+    var SpecialQRCode = "527938771172901279189925165702680843491640248661859341341390586650084794511574000236885341453925367356260048538727938343853976192002736597426854849338682681346642095000006023341748677930725682681386000000113017298340785362682515336936255024001481853772";
+    // 現在のURLを取得
+    var currentURL = window.location.href;
+    // 指定された文字列で終わっているか
+    if(currentURL.endsWith(SpecialQRCode)){
+      // URLを置き換える
+      history.replaceState({}, document.title, ".");
+    }
+  </script>
   <link rel="icon" type="image/png" href="https://edge-server.224.works/pyramid/favicon16.png" sizes="16x16">
   <link rel="icon" type="image/png" href="https://edge-server.224.works/pyramid/favicon32.png" sizes="32x32">
   <link rel="icon" type="image/png" href="https://edge-server.224.works/pyramid/favicon48.png" sizes="48x48">
