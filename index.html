@@ -88,12 +88,8 @@
         ブロックを組み合わせて、<br>
         関数型プログラミングをはじめよう！
       </p>
-      <div class="m-3 text-slate-700 sm:hidden"><!--for smartphone -->
-        <p class="mt-2">ブロックプログラミング機能は、スマートフォンからはご利用いただけません。</p>
-        <p class="mt-2">プレイグラウンドやチュートリアルをご利用の場合、<b>パソコンからのアクセス</b>をお願いします。</p>
-      </div>
       <div class="flex flex-wrap mx-1">
-        <dev class="w-full md:w-1/2 lg:w-1/3">
+        <dev class="w-full md:w-1/2 lg:w-1/3 hidden sm:inline-block">
           <section class="border-sky-200 bg-sky-100 rounded border-b-2 shadow m-2 hover:opacity-75">
             <a href="playground/">
               <h2 class="text-2xl sm:text-3xl text-slate-800 pl-4 pt-4">プレイグラウンドへ</h2>
@@ -102,7 +98,7 @@
             </a>
           </section>
         </dev>
-        <dev class="w-full md:w-1/2 lg:w-1/3">
+        <dev class="w-full md:w-1/2 lg:w-1/3 hidden sm:inline-block">
           <section class="border-emerald-200 bg-emerald-100 rounded border-b-2 shadow m-2 hover:opacity-75">
             <a href="tutorial/">
               <h2 class="text-2xl sm:text-3xl text-slate-800 pl-4 pt-4">チュートリアルへ</h2>
@@ -111,7 +107,7 @@
             </a>
           </section>
         </dev>
-        <dev class="w-full md:w-1/2 lg:w-1/3">
+        <dev class="w-full md:w-1/2 lg:w-1/3 hidden sm:inline-block">
           <section class="border-gray-200 bg-gray-100 rounded border-b-2 shadow m-2 hover:opacity-75">
             <a href="doc/">
               <h2 class="text-2xl sm:text-3xl text-gray-800 pl-4 pt-4">ドキュメントへ</h2>
@@ -132,6 +128,30 @@
         ピラミッドを作るプロジェクトは、チームで自由課題に取り組む大学の授業から始まりました。</p>
       <p class="text-slate-700 mt-4"><b>ブロックを用いて視覚的に関数型プログラミングを学べる作品を作りたい</b>という目標が一致した学生5人で、<span style="background: linear-gradient(transparent 60%, #feff8a 60%);"><b>Tsumiki Works</b></span>というチームを結成。開発はTsumiki Works、ウェブ上での公開や現場への導入支援などはアゼリアワークス合同会社が行っています。</p>
       <p class="text-slate-700 mt-4">このサイトでは、そのピラミッドを実際にお楽しみいただけます。</p>
+      <div class="text-slate-700 sm:hidden"><!--for smartphone -->
+        <p class="mt-4">【スマートフォンご利用の方へ】ブロックプログラミング機能は、スマートフォンでは操作ができません。</p>
+        <p class="mt-2">プレイグラウンドやチュートリアルをご利用の場合、<b>パソコンからのアクセス</b>をお願いします。</p>
+      </div>
+      <div class="flex flex-wrap">
+        <dev class="w-full md:w-1/2 lg:w-1/3 sm:hidden inline-block">
+          <section class="border-emerald-200 bg-emerald-100 rounded border-b-2 shadow my-2 hover:opacity-75">
+            <a href="tutorial/">
+              <h2 class="text-xl sm:text-3xl text-slate-800 pl-4 pt-4">チュートリアルへ</h2>
+              <p class="text-slate-500 pt-2 pl-4 pb-4">ピラミッドでできる問題を見る。
+              </p>
+            </a>
+          </section>
+        </dev>
+        <dev class="w-full md:w-1/2 lg:w-1/3 sm:hidden inline-block">
+          <section class="border-gray-200 bg-gray-100 rounded border-b-2 shadow my-2 hover:opacity-75">
+            <a href="doc/">
+              <h2 class="text-xl sm:text-3xl text-gray-800 pl-4 pt-4">ドキュメントへ</h2>
+              <p class="text-gray-500 pt-2 pl-4 pb-4">演算や関数の仕様を知る。
+              </p>
+            </a>
+          </section>
+        </dev>
+      </div>
       <h2 class="text-3xl text-sky-600 mt-10 pl-4 py-2 border-l-8 border-sky-600 bg-sky-50">できること</h2>
       <h3 class="text-2xl text-slate-800 mt-4">プレイグラウンド</h3>
       <p class="text-slate-700 my-2">プレイグラウンドでは、ピラミッドの機能をフルに使い多彩なプログラミングを楽しめます。</p>
