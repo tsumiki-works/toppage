@@ -1233,3 +1233,23 @@ video {
     line-height: 2.5rem;
   }
 }
+
+.balloon {
+  position: relative;
+  display: inline-block;
+  margin: 0.5em 0;
+  padding: 7px 10px;
+  min-width: 120px;
+  max-width: 100%;
+  background: rgb(241 245 249);
+  border-radius: 0.25em;
+}
+.balloon:before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -15px;
+  border: 15px solid transparent;
+  border-top: 15px solid rgb(241 245 249);
+}
