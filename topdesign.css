@@ -1242,7 +1242,12 @@ video {
   min-width: 120px;
   max-width: 100%;
   background: rgb(241 245 249);
-  border-radius: 0.25em;
+  border-radius: 0.25rem;
+  animation-name: hirami;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-duration: 1.25s;
 }
 .balloon:before {
   content: "";
@@ -1252,4 +1257,13 @@ video {
   margin-left: -15px;
   border: 15px solid transparent;
   border-top: 15px solid rgb(241 245 249);
+}
+
+@keyframes hirami {
+  0% {
+      transform: translate(0, 0.15rem);
+  }
+  100% {
+      transform: translate(0, -0.15rem)
+  }
 }
