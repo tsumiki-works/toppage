@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://pyramid.224.works/</loc>
+  <priority>1.0</priority>
+</url>
+<url>
+  <loc>https://pyramid.224.works/playground/</loc>
+  <priority>0.8</priority>
+</url>
+<url>
+  <loc>https://pyramid.224.works/tutorial/</loc>
+  <priority>0.8</priority>
+</url>
+<url>
+  <loc>https://pyramid.224.works/doc/</loc>
+  <priority>0.8</priority>
+</url>
+<url>
+  <loc>https://pyramid.224.works/license/</loc>
+  <priority>0.5</priority>
+</url>
+<url>
+  <loc>https://pyramid.224.works/tutorial/do/?q=1</loc>
+  <priority>0.7</priority>
+</url>
+<url>
+  <loc>https://pyramid.224.works/tutorial/do/?q=2</loc>
+  <priority>0.7</priority>
+</url>
+<url>
+  <loc>https://pyramid.224.works/tutorial/do/?q=3</loc>
+  <priority>0.7</priority>
+</url>
+<url>
+  <loc>https://pyramid.224.works/tutorial/do/?q=4</loc>
+  <priority>0.7</priority>
+</url>
+<url>
+  <loc>https://pyramid.224.works/tutorial/do/?q=5</loc>
+  <priority>0.7</priority>
+</url>
+<url>
+  <loc>https://pyramid.224.works/tutorial/do/?q=6</loc>
+  <priority>0.7</priority>
+</url>
+<url>
+  <loc>https://pyramid.224.works/tutorial/do/?q=7</loc>
+  <priority>0.7</priority>
+</url>
+<url>
+  <loc>https://pyramid.224.works/tutorial/do/?q=8</loc>
+  <priority>0.7</priority>
+</url>
+<url>
+  <loc>https://pyramid.224.works/tutorial/do/?q=9</loc>
+  <priority>0.7</priority>
+</url>
+<url>
+  <loc>https://pyramid.224.works/doc/?page=type</loc>
+  <priority>0.7</priority>
+</url>
+<url>
+  <loc>https://pyramid.224.works/doc/?page=calc</loc>
+  <priority>0.7</priority>
+</url>
+<url>
+  <loc>https://pyramid.224.works/doc/?page=func</loc>
+  <priority>0.7</priority>
+</url>
+<url>
+  <loc>https://pyramid.224.works/doc/?page=block</loc>
+  <priority>0.7</priority>
+</url>
+
+
+</urlset>
