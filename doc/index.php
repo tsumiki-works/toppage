@@ -35,19 +35,19 @@
   <link rel="stylesheet" href="blockpreview.css">
   <!-- /CSS -->
 </head>
-<header class="py-1 bg-white shadow">
-  <nav class="container max-w-screen-lg mx-auto flex items-center">
-    <a href="../">
-      <img class="h-12 ml-1 mr-2 p-2 hover:opacity-80" src="../images/logo.svg" alt="Pyramid logo(トップヘ戻る)">
-    </a>
-    <div class="ml-auto hidden md:inline-block">
-      <a class="mr-4 text-slate-700 hover:text-slate-500" href="../playground/">プレイグラウンド</a>
-      <a class="mr-4 text-slate-700 hover:text-slate-500" href="../tutorial/">チュートリアル</a>
-    </div>
-  </nav>
-</header>
 
 <body class="flex flex-col min-h-screen">
+  <header class="py-1 bg-white shadow">
+    <nav class="container max-w-screen-lg mx-auto flex items-center">
+      <a href="../">
+        <img class="h-12 ml-1 mr-2 p-2 hover:opacity-80" src="../images/logo.svg" alt="Pyramid logo(トップヘ戻る)">
+      </a>
+      <div class="ml-auto hidden md:inline-block">
+        <a class="mr-4 text-slate-700 hover:text-slate-500" href="../playground/">プレイグラウンド</a>
+        <a class="mr-4 text-slate-700 hover:text-slate-500" href="../tutorial/">チュートリアル</a>
+      </div>
+    </nav>
+  </header>
   <main class="container max-w-screen-lg mx-auto flex-grow">
     <dev class="sm:flex">
       <section class="m-4 leading-relaxed sm:order-2">
@@ -100,13 +100,12 @@
       </aside>
     </dev>
   </main>
+  <footer class="container max-w-screen-lg mx-auto p-2 text-slate-600">
+    <p>Copyright (c) 2022 TsumikiWorks</p>
+    <p class="text-sm">Released under the MIT license
+      <a href="https://github.com/tsumiki-works/Pyramid/blob/main/LICENSE"
+        class="hover:text-slate-500" target="_blank" rel="noopener noreferrer">https://github.com/tsumiki-works/Pyramid/blob/main/LICENSE</a>
+    </p>
+  </footer>
 </body>
-<footer class="container max-w-screen-lg mx-auto p-2 text-slate-600">
-  <p>Copyright (c) 2022 TsumikiWorks</p>
-  <p class="text-sm">Released under the MIT license
-    <a href="https://github.com/tsumiki-works/Pyramid/blob/main/LICENSE"
-      class="hover:text-slate-500" target="_blank" rel="noopener noreferrer">https://github.com/tsumiki-works/Pyramid/blob/main/LICENSE</a>
-  </p>
-</footer>
-
 </html>
