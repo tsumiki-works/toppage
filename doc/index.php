@@ -49,7 +49,7 @@
     </nav>
   </header>
   <main class="container max-w-screen-lg mx-auto flex-grow">
-    <dev class="sm:flex">
+    <div class="sm:flex">
       <section class="m-4 leading-relaxed sm:order-2">
         <?php include('pageloader.php'); ?>
       </section>
@@ -98,7 +98,7 @@
           <h3 class="pl-2 mx-2 mt-3 text-lg border-l-2 border-sky-100 hover:border-sky-400 ml-6">リスト操作関数</h3>
         </a>
       </aside>
-    </dev>
+    </div>
   </main>
   <footer class="container max-w-screen-lg mx-auto p-2 text-slate-600">
     <p>Copyright (c) 2022 TsumikiWorks</p>
